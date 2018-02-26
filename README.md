@@ -76,7 +76,10 @@ in strings like `"c:\data\"` converted into `"c:/data/"`).
 Install development version from GitHub:
 
 ``` r
-if (!require(devtools)) install.packages("devtools")
+if (!require(devtools)) 
+    install.packages("devtools")
+
+devtools::install_github("GegznaV/addin.tools")
 devtools::install_github("GegznaV/addins.rs")
 ```
 
