@@ -1,0 +1,35 @@
+Package: addins.rs
+Type: Package
+Title: RStudio Add-ins to Insert Operators and Modify Text
+Version: 0.0.1
+Date: 2018-02-26
+Authors@R: person("Vilmantas", "Gegzna",
+                    email = "GegznaV@gmail.com",
+                    role = c("aut", "cre","cph")
+            )
+Description: A set of RStudio addins that are designed to be used in
+             combination with user-defined RStudio keyboard shortcuts. These
+             addins:
+             1) insert text at a cursor position (e.g. insert
+             operators %>%, <<-, %$%, etc.);
+             2) replace symbols in selected pieces of text (e.g., convert
+             backslashes to forward slashes which results in stings like
+             "c:\data\" converted into "c:/data/").
+URL: https://github.com/GegznaV/addins.rs
+BugReports: https://github.com/GegznaV/addins.rs/issues
+License: MIT + file LICENSE
+LazyData: TRUE
+ByteCompile: TRUE
+Encoding: UTF-8
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
+Depends:
+    R (>= 3.2),
+    addin.tools
+Imports:
+    rstudioapi,
+    magrittr
+Suggests:
+    knitr,
+    rmarkdown,
+    rebus

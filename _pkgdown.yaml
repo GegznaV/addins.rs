@@ -1,0 +1,33 @@
+favicon: "favicon.png"
+template:
+  params:
+    bootswatch: united
+navbar:
+  title: "addins.rs | R package"
+  type: default
+  left:
+  - icon: fa-home fa-lg
+    href: index.html
+  - text: Functions
+    href: reference/index.html
+  - text: Tutorials and Examples
+    menu:
+    - text: Recommended Workflow and Examples
+      href: articles/v1_workflow.html
+  right:
+  - icon: fa-github fa-lg
+    href: https://github.com/GegznaV/addins.rs
+reference:
+- title: '"Replace" family functions'
+  contents:
+  - starts_with("rs_replace")
+- title: 'Add-ins to format text in R Markdown documents'
+  contents:
+  - starts_with("rs_enclose")
+  - starts_with("rmd_")
+- title: 'Insert operators'
+  contents:
+  - starts_with("rs_insert")
+- title: 'Other'
+  contents:
+  - '`addins.rs`'
