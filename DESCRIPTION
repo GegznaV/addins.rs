@@ -23,6 +23,8 @@ ByteCompile: TRUE
 Encoding: UTF-8
 RoxygenNote: 6.0.1
 VignetteBuilder: knitr
+Remotes:
+    github::GegznaV/addin.tools
 Depends:
     R (>= 3.2),
     addin.tools
