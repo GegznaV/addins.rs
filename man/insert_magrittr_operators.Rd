@@ -21,7 +21,8 @@ rs_insert_tee_pipe(context = rs_get_context())
 (class \code{document_context}).}
 }
 \description{
-These add-ins insert operators \code{\%>\%}, \code{\%<>\%}, \code{\%$\%},
+These add-ins insert operators \code{\%>\%}, \code{\%<>\%},
+ \code{\%$\%},
 and \code{\%T>\%} at the cursor position.
 The operators are defined in package \pkg{magrittr}.
 }

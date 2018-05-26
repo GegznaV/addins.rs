@@ -11,7 +11,7 @@ rs_insert_infix_in(context = rs_get_context())
 (class \code{document_context}).}
 }
 \description{
-Insert \%in\%.
+Call this function as an add-in to insert \code{ \%in\% } at the cursor position.
 }
 \seealso{
 Operator \link[base]{\%in\%}.

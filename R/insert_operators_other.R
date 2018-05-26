@@ -22,12 +22,9 @@ rs_insert_matrix_multiplication <- function(context = rs_get_context()) {
 
 #' Insert \%in\%.
 #'
-#' @inheritParams addin.tools::rs_get_ind
-#'
-#' Call this function as an add-in to insert \code{ \%in\% } at the cursor position.
+#' @description Call this function as an add-in to insert \code{ \%in\% } at the cursor position.
 #'
 #' @inheritParams addin.tools::rs_get_ind
-#'
 #' @export
 #' @seealso Operator \link[base]{\%in\%}.
 #'

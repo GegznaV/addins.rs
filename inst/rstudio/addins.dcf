@@ -1,4 +1,19 @@
 
+Name: Align code at `=`
+Description: Align code in selected lines at first occurance of `=` symbol.
+Binding: rs_align_code_at_equal
+Interactive: false
+
+Name: Align code at `<-`
+Description: Align code in selected lines at first occurance of assingment operator `<-`.
+Binding: rs_align_code_at_arrow
+Interactive: false
+
+Name: Align code at `%>%`
+Description: Align code in selected lines at first occurance of pipe operator `%>%`.
+Binding: rs_align_code_at_pipe
+Interactive: false
+
 Name: Enclose with `%` (% %)
 Description: Enclose with `%`...`%`.
 Binding: rs_insert_infix_operator

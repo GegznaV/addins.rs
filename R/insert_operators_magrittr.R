@@ -1,11 +1,16 @@
 # From `magrittr` ---------------------------------------------------------
 # Insert \%>\%, \%<>\%, \%$\% and \%T>\%
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-#' Insert magrittr operators.
+#' @name insert_magrittr_operators
 #'
-#' These add-ins insert operators \code{\%>\%}, \code{\%<>\%}, \code{\%$\%},
+#' @title Insert magrittr operators.
+#'
+#' @description These add-ins insert operators \code{\%>\%}, \code{\%<>\%},
+#'  \code{\%$\%},
 #' and \code{\%T>\%} at the cursor position.
 #' The operators are defined in package \pkg{magrittr}.
+#'
+#' @inheritParams addin.tools::rs_get_ind
 #'
 #' @note Operator does not work unless package \pkg{magrittr} or
 #' equivalent is loaded.
@@ -17,10 +22,6 @@
 #'    \item Tee operator \link[magrittr]{\%T>\%}
 #' }
 #'
-#' @inheritParams addin.tools::rs_get_ind
-#'
-#'
-#' @name insert_magrittr_operators
 #' @family 'Insert at cursor position' add-ins
 NULL
 
