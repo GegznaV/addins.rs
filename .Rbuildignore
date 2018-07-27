@@ -8,3 +8,5 @@
 ^pkgdown.*
 ^pkgdown$
 ^docs/.*
+^_pkgdown\.yml$
+^docs$

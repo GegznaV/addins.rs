@@ -1,36 +1,14 @@
 
-<!-- 
-
-TO DO: 
-
-1. Create an interactive addin, that enables to select formatting options;
-2. Write unit tests.
-3. Insert link [label](link_location)
-4. Insert image ![caption](image_location)
-5. Insert image with caption (interactive input through Shiny):
-
-fig_id = sub("\\.","_",
-             paste0("fig_ID__", (as.double(Sys.time()))))
-
-<img src="image_location" title="The_caption_of_your_figure_comes_here..." alt="The_caption_of_your_figure_comes_here..." style="display: block; margin: auto;" />
-
-6. Write function to check if there is a space before and after the selection
-(for %>% and similar operators)
-
-7. Add possibility not to add list bullets and numbers to the empty rows.
-
--->
-
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 [![MIT
 licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/addins.rs)](https://cran.r-project.org/package=addins.rs)
 [![GitHub
-version](https://img.shields.io/badge/GitHub-0.0.2-brightgreen.svg)](https://github.com/GegznaV/addins.rs)
+version](https://img.shields.io/badge/GitHub-0.0.3-brightgreen.svg)](https://github.com/GegznaV/addins.rs)
 [![Travis-CI Build
 Status](https://travis-ci.org/GegznaV/addins.rs.png?branch=master)](https://travis-ci.org/GegznaV/addins.rs)
-[![Updated-on](https://img.shields.io/badge/Updated%20on-2018--05--27-yellowgreen.svg)](/commits/master)
+[![Updated-on](https://img.shields.io/badge/Updated%20on-2018--07--27-yellowgreen.svg)](/commits/master)
 <!-- [![Research software impact](http://depsy.org/api/package/cran/addins.rs/badge.svg)](http://depsy.org/package/r/addins.rs) -->
 
 <!-- [![Rdoc](http://www.rdocumentation.org/badges/version/addins.rs)](http://www.rdocumentation.org/packages/addins.rs) -->
