@@ -23,8 +23,9 @@ rs_align_code <- function(at_symbol, context = rs_get_context()) {
                             string  = text) %>%
         as.data.frame() %>%
         dplyr::mutate(row    = row_numbers,
-                      shift  = max(start, na.rm = TRUE) - start, # n spaces to insert
-                      spaces = make_spaces(shift)) %>%
+                      shift  = max(start, na.rm = TRUE) - start, # shift = n spaces to insert
+                      spaces = make_spaces(shift) # spaces that create alignment
+        ) %>%
         dplyr::filter(shift > 0) %>% # only rows which should be modiffied
         dplyr::rename(col = start) %>%
         dplyr::select(row, col, spaces)

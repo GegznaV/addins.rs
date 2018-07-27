@@ -1,60 +1,60 @@
 
-Name: Align code at `=`
+Name: RS: Align code at `=`
 Description: Align code in selected lines at first occurance of `=` symbol.
 Binding: rs_align_code_at_equal
 Interactive: false
 
-Name: Align code at `<-`
+Name: RS: Align code at `<-`
 Description: Align code in selected lines at first occurance of assingment operator `<-`.
 Binding: rs_align_code_at_arrow
 Interactive: false
 
-Name: Align code at `%>%`
+Name: RS: Align code at `%>%`
 Description: Align code in selected lines at first occurance of pipe operator `%>%`.
 Binding: rs_align_code_at_pipe
 Interactive: false
 
-Name: Enclose with `%` (% %)
+Name: RS: Enclose with `%` (% %)
 Description: Enclose with `%`...`%`.
 Binding: rs_insert_infix_operator
 Interactive: false
 
-Name: Insert %>%
+Name: RS: Insert %>%
 Description: Insert `%>%` at the cursor position.
 Binding: rs_insert_pipe
 Interactive: false
 
-Name: Insert %<>%
+Name: RS: Insert %<>%
 Description: Insert `%<>%` at the cursor position.
 Binding: rs_insert_update_pipe
 Interactive: false
 
-Name: Insert %$%
+Name: RS: Insert %$%
 Description: Insert `%$%` at the cursor position.
 Binding: rs_insert_exposition_pipe
 Interactive: false
 
-Name: Insert %T>%
+Name: RS: Insert %T>%
 Description: Insert `%T>%` at the cursor position.
 Binding: rs_insert_tee_pipe
 Interactive: false
 
-Name: Insert %*%
+Name: RS: Insert %*%
 Description: Insert `%*%` at the cursor position.
 Binding: rs_insert_matrix_multiplication
 Interactive: false
 
-Name: Insert %in%
+Name: RS: Insert %in%
 Description: Insert `%in%` at the cursor position.
 Binding: rs_insert_infix_in
 Interactive: false
 
-Name: Insert %!in%
+Name: RS: Insert %!in%
 Description: Insert `%!in%` at the cursor position.
 Binding: rs_insert_infix_not_in
 Interactive: false
 
-Name: Insert %R%
+Name: RS: Insert %R%
 Description: Insert `%R%` at the cursor position.
 Binding: rs_insert_infix_R
 Interactive: false
@@ -62,22 +62,22 @@ Interactive: false
 
 
 
-Name: Replace \ with \\
+Name: RS: Replace \ with \\
 Description: Replaces \ with \\ in the selected text.
 Binding: rs_replace_slash_bs2d
 Interactive: false
 
-Name: Replace \\ with \
+Name: RS: Replace \\ with \
 Description: Replaces \\ with \ in the selected text.
 Binding: rs_replace_slash_bd2s
 Interactive: false
 
-Name: Replace \ with /
+Name: RS: Replace \ with /
 Description: Replaces \ with / in the selected text.
 Binding: rs_replace_slash_b2fw
 Interactive: false
 
-Name: Replace / with \
+Name: RS: Replace / with \
 Description: Replaces / with \ in the selected text.
 Binding: rs_replace_slash_fw2b
 Interactive: false
@@ -85,17 +85,17 @@ Interactive: false
 
 
 
-Name: Insert single straight line (-----)
+Name: RS: Insert single straight line (-----)
 Description: Insert sequence of symbols "-".
 Binding: rs_insert_line_ss
 Interactive: false
 
-Name: Insert double straight line (=====)
+Name: RS: Insert double straight line (=====)
 Description: Insert sequence of symbols "=".
 Binding: rs_insert_line_ds
 Interactive: false
 
-Name: Insert single wavy line (~~~~~)
+Name: RS: Insert single wavy line (~~~~~)
 Description: Insert sequence of symbols "~".
 Binding: rs_insert_line_sw
 Interactive: false
@@ -104,22 +104,22 @@ Interactive: false
 
 
 
-Name: Insert <-
+Name: RS: Insert <-
 Description: Insert `<-` at the cursor position.
 Binding: rs_insert_arrow_rl
 Interactive: false
 
-Name: Insert <<-
+Name: RS: Insert <<-
 Description: Insert `<<-` at the cursor position.
 Binding: rs_insert_arrow_rl2
 Interactive: false
 
-Name: Insert ->
+Name: RS: Insert ->
 Description: Insert `->` at the cursor position.
 Binding: rs_insert_arrow_lr
 Interactive: false
 
-Name: Insert ->>
+Name: RS: Insert ->>
 Description: Insert `->>` at the cursor position.
 Binding: rs_insert_arrow_lr2
 Interactive: false
