@@ -58,7 +58,6 @@ rs_insert_modulo <- function(context = rs_get_context()) {
 #'
 #' @family 'Insert at cursor position' add-ins
 rs_insert_infix_in <- function(context = rs_get_context()) {
-    # rstudioapi::insertText(text = " %in% ")
     rs_insert_text(text = "%in%", context = context, spaces = TRUE)
 }
 
@@ -78,7 +77,6 @@ rs_insert_infix_in <- function(context = rs_get_context()) {
 #' @family 'Insert at cursor position' add-ins
 #' @seealso Operator \link[base]{\%in\%}.
 rs_insert_infix_not_in <- function(context = rs_get_context()) {
-    # rstudioapi::insertText(text = " %!in% ")
     rs_insert_text(text = "%!in%", context = context, spaces = TRUE)
 }
 
@@ -97,6 +95,5 @@ rs_insert_infix_not_in <- function(context = rs_get_context()) {
 #' @family 'Insert at cursor position' add-ins
 #'
 rs_insert_infix_R <- function(context = rs_get_context()) {
-    # rstudioapi::insertText(text = " %R% ")
     rs_insert_text(text = "%R%", context = context, spaces = TRUE)
 }

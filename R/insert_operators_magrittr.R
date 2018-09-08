@@ -29,28 +29,24 @@ NULL
 #' @rdname insert_magrittr_operators
 #' @export
 rs_insert_pipe <- function(context = rs_get_context()) {
-    # rstudioapi::insertText(text = " %>% ")
     rs_insert_text(text = "%>%", context = context, spaces = TRUE)
 }
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #' @rdname insert_magrittr_operators
 #' @export
 rs_insert_update_pipe <- function(context = rs_get_context()) {
-    # rstudioapi::insertText(text = " %<>% ")
     rs_insert_text(text = "%<>%", context = context, spaces = TRUE)
 }
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #' @rdname insert_magrittr_operators
 #' @export
 rs_insert_exposition_pipe <- function(context = rs_get_context()) {
-    # rstudioapi::insertText(text = " %$% ")
     rs_insert_text(text = "%$%", context = context, spaces = TRUE)
 }
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #' @rdname insert_magrittr_operators
 #' @export
 rs_insert_tee_pipe <- function(context = rs_get_context()) {
-    # rstudioapi::insertText(text = " %T>% ")
     rs_insert_text(text = "%T>%", context = context, spaces = TRUE)
 }
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

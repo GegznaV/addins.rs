@@ -91,17 +91,17 @@ Interactive: false
 
 Name: {RS} Insert single wavy line (~~~~~)
 Description: Insert sequence of symbols "~".
-Binding: rs_insert_sym_line_sw
+Binding: rs_insert_line_sw
 Interactive: false
 
 Name: {RS} Insert single straight line (-----)
 Description: Insert sequence of symbols "-".
-Binding: rs_insert_sym_line_ss
+Binding: rs_insert_line_ss
 Interactive: false
 
 Name: {RS} Insert double straight line (=====)
 Description: Insert sequence of symbols "=".
-Binding: rs_insert_sym_line_ds
+Binding: rs_insert_line_ds
 Interactive: false
 
 
