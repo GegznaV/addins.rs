@@ -47,3 +47,4 @@ Assignment operators \link[base]{assignOps}.\cr
 
 Other 'Insert at cursor position' addins: \code{\link{insert_lines}}
 }
+\concept{'Insert at cursor position' addins}
