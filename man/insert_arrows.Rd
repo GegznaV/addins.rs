@@ -8,13 +8,17 @@
 \alias{rs_insert_arrow_lr2}
 \title{Insert arrow (->, ->>, <-, <<-).}
 \usage{
-rs_insert_arrow_rl()
+rs_insert_arrow_rl(context = rs_get_context())
 
-rs_insert_arrow_rl2()
+rs_insert_arrow_rl2(context = rs_get_context())
 
-rs_insert_arrow_lr()
+rs_insert_arrow_lr(context = rs_get_context())
 
-rs_insert_arrow_lr2()
+rs_insert_arrow_lr2(context = rs_get_context())
+}
+\arguments{
+\item{context}{Object with context of active RStudio document
+(class \code{document_context}).}
 }
 \description{
 RStudio add-in to insert either \code{->}, \code{->>},

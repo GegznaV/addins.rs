@@ -5,6 +5,8 @@
 #' RStudio add-in to insert either \code{->}, \code{->>},
 #' \code{<-} or \code{<<-} at the cursor position.
 #'
+#' @inheritParams addin.tools::rs_get_ind
+#'
 #' @export
 #' @note use hotkeys combination \code{ALT} + \code{-} to insert \code{<-} in RStudio.
 #'
@@ -29,24 +31,24 @@
 #' }
 #' @name insert_arrows
 #' @family 'Insert at cursor position' addins
-rs_insert_arrow_rl <- function() {
-    rstudioapi::insertText(text = "<-")
+rs_insert_arrow_rl <- function(context = rs_get_context()) {
+    rs_insert_text(text = "<-", context = context, spaces = TRUE)
 }
 
 #' @export
 #' @rdname insert_arrows
-rs_insert_arrow_rl2 <- function() {
-    rstudioapi::insertText(text = "<<-")
+rs_insert_arrow_rl2 <- function(context = rs_get_context()) {
+    rs_insert_text(text = "<<-", context = context, spaces = TRUE)
 }
 
 #' @export
 #' @rdname insert_arrows
-rs_insert_arrow_lr <- function() {
-    rstudioapi::insertText(text = "->")
+rs_insert_arrow_lr <- function(context = rs_get_context()) {
+    rs_insert_text(text = "->", context = context, spaces = TRUE)
 }
 
 #' @export
 #' @rdname insert_arrows
-rs_insert_arrow_lr2 <- function() {
-    rstudioapi::insertText(text = "->>")
+rs_insert_arrow_lr2 <- function(context = rs_get_context()) {
+    rs_insert_text(text = "->>", context = context, spaces = TRUE)
 }
