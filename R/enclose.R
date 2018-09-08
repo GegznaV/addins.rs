@@ -9,5 +9,5 @@
 #' @family 'Insert at cursor position' add-ins
 #'
 rs_enclose_with_percent <- function(context = rs_get_context()) {
-    rs_enclose_selection_with(symbol = "%")
+    rs_enclose_selection_with(symbol = "%", context = context)
 }
