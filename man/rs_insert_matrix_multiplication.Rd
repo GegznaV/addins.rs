@@ -17,9 +17,11 @@ Call this function as an add-in to insert \code{ \%*\% } at the cursor position.
 Operator \link[base]{\%*\%} for matrix multiplication.
 
 Other 'Insert at cursor position' add-ins: \code{\link{insert_magrittr_operators}},
+  \code{\link{rs_enclose_with_percent}},
   \code{\link{rs_insert_infix_R}},
   \code{\link{rs_insert_infix_in}},
   \code{\link{rs_insert_infix_not_in}},
-  \code{\link{rs_insert_infix_operator}}
+  \code{\link{rs_insert_integer_division}},
+  \code{\link{rs_insert_modulo}}
 }
 \concept{'Insert at cursor position' add-ins}
