@@ -14,6 +14,7 @@
 #'
 #' @param start (numeric) The number of column the line begins at.
 #' @param end (numeric) The number of column the line ends at.
+#' @inheritParams addin.tools::rs_get_ind
 #'
 #' @family 'Insert at cursor position' addins
 NULL

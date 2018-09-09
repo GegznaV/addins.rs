@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Insert arrow (-&gt;, -&gt;&gt;, &lt;-, &lt;&lt;-). — insert_arrows • addins.rs</title>
+<title>Align code at certain symbols. — rs_align_code • addins.rs</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -30,10 +30,9 @@
 
 
 
-<meta property="og:title" content="Insert arrow (-&gt;, -&gt;&gt;, &lt;-, &lt;&lt;-). — insert_arrows" />
+<meta property="og:title" content="Align code at certain symbols. — rs_align_code" />
 
-<meta property="og:description" content="RStudio add-in to insert either -&amp;gt;, -&amp;gt;&amp;gt;,
-&amp;lt;- or &amp;lt;&amp;lt;- at the cursor position." />
+<meta property="og:description" content="Align code of selected lines at first occurance of certain symbol." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -98,29 +97,33 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Insert arrow (-&gt;, -&gt;&gt;, &lt;-, &lt;&lt;-).</h1>
-    <small class="dont-index">Source: <a href='https://github.com/GegznaV/addins.rs/blob/master/R/insert_arrows.R'><code>R/insert_arrows.R</code></a></small>
-    <div class="hidden name"><code>insert_arrows.Rd</code></div>
+    <h1>Align code at certain symbols.</h1>
+    <small class="dont-index">Source: <a href='https://github.com/GegznaV/addins.rs/blob/master/R/rs_align_code.R'><code>R/rs_align_code.R</code></a></small>
+    <div class="hidden name"><code>rs_align_code.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>RStudio add-in to insert either <code>-&gt;</code>, <code>-&gt;&gt;</code>,
-<code>&lt;-</code> or <code>&lt;&lt;-</code> at the cursor position.</p>
+    <p>Align code of selected lines at first occurance of certain symbol.</p>
     
     </div>
 
-    <pre class="usage"><span class='fu'>rs_insert_arrow_rl</span>(<span class='kw'>context</span> <span class='kw'>=</span> <span class='fu'>rs_get_context</span>())
+    <pre class="usage"><span class='fu'>rs_align_code</span>(<span class='no'>at_symbol</span>, <span class='kw'>context</span> <span class='kw'>=</span> <span class='fu'>rs_get_context</span>())
 
-<span class='fu'>rs_insert_arrow_rl2</span>(<span class='kw'>context</span> <span class='kw'>=</span> <span class='fu'>rs_get_context</span>())
+<span class='fu'>rs_align_code_at_equal</span>(<span class='kw'>context</span> <span class='kw'>=</span> <span class='fu'>rs_get_context</span>())
 
-<span class='fu'>rs_insert_arrow_lr</span>(<span class='kw'>context</span> <span class='kw'>=</span> <span class='fu'>rs_get_context</span>())
+<span class='fu'>rs_align_code_at_arrow</span>(<span class='kw'>context</span> <span class='kw'>=</span> <span class='fu'>rs_get_context</span>())
 
-<span class='fu'>rs_insert_arrow_lr2</span>(<span class='kw'>context</span> <span class='kw'>=</span> <span class='fu'>rs_get_context</span>())</pre>
+<span class='fu'>rs_align_code_at_pipe</span>(<span class='kw'>context</span> <span class='kw'>=</span> <span class='fu'>rs_get_context</span>())</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>at_symbol</th>
+      <td><p>(character) A regular expression that represents
+symbol treated as reference for code alignment.</p></td>
+    </tr>
     <tr>
       <th>context</th>
       <td><p>Object with context of active RStudio document
@@ -130,33 +133,9 @@
     
     <h2 class="hasAnchor" id="note"><a class="anchor" href="#note"></a>Note</h2>
 
-    <p>use hotkeys combination <code>ALT</code> + <code>-</code> to insert <code>&lt;-</code> in RStudio.</p>
-    
-    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
-
-    <div class='dont-index'><p>Assignment operators <a href='http://www.rdocumentation.org/packages/base/topics/assignOps'>assignOps</a>.<br /></p>
-<p>Other 'Insert at cursor position' addins: <code><a href='insert_lines.html'>insert_lines</a></code></p></div>
+    <p>Inspired by: <a href='https://github.com/seasmith/AlignAssign'>https://github.com/seasmith/AlignAssign</a></p>
     
 
-    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"># NOT RUN {
-\donttest{
-library(addins.rs)
-
-rs_insert_arrow_rl()
-## <-
-
-rs_insert_arrow_rl2()
-## <<-
-
-rs_insert_arrow_lr()
-## ->
-
-rs_insert_arrow_lr2()
-## ->>
-}
-# }
-</pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
@@ -164,11 +143,7 @@ rs_insert_arrow_lr2()
       <li><a href="#arguments">Arguments</a></li>
       
       <li><a href="#note">Note</a></li>
-
-      <li><a href="#see-also">See also</a></li>
-      
-      <li><a href="#examples">Examples</a></li>
-    </ul>
+          </ul>
 
   </div>
 </div>

@@ -11,8 +11,8 @@
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
-<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/united/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 <!-- Font Awesome icons -->
@@ -21,13 +21,19 @@
 <!-- clipboard.js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" integrity="sha384-cV+rhyOuRHc9Ub/91rihWcGmMmCXDeksTtCihMupQHSsi8GIIRDG0ThDc3HGQFJ3" crossorigin="anonymous"></script>
 
+<!-- sticky kit -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js" integrity="sha256-c4Rlo1ZozqTPE2RLuvbusY3+SU1pQaJC0TjuhygMipw=" crossorigin="anonymous"></script>
+
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
-<script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-  
-  
+
+
+
 <meta property="og:title" content="Function reference" />
+
+
+
 <!-- mathjax -->
 <script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
@@ -37,8 +43,7 @@
 <![endif]-->
 
 
-  	<link rel="icon" href="../favicon.png" />
-</head>
+  </head>
 
   <body>
     <div class="container template-reference-index">
@@ -51,8 +56,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="../index.html">addins.rs | R package</a>
+      <span class="navbar-brand">
+        <a class="navbar-link" href="../index.html">addins.rs</a>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">0.0.4</span>
+      </span>
     </div>
+
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
@@ -62,19 +71,7 @@
   </a>
 </li>
 <li>
-  <a href="../reference/index.html">Functions</a>
-</li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Tutorials and Examples
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="../articles/v1_workflow.html">Recommended Workflow and Examples</a>
-    </li>
-  </ul>
+  <a href="../reference/index.html">Reference</a>
 </li>
       </ul>
       
@@ -86,6 +83,7 @@
   </a>
 </li>
       </ul>
+      
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
@@ -93,187 +91,114 @@
       
       </header>
 
-      <div class="row">
-  <div class="col-md-9">
+<div class="row">
+  <div class="contents col-md-9">
     <div class="page-header">
-      <h1>
-        Reference
-        <small>version&nbsp;0.0.1</small>
-      </h1>
+      <h1>Reference</h1>
     </div>
 
-    <div class="contents">
-      <table class="ref-index">
+    <table class="ref-index">
 
-      <colgroup>
-        <col class="alias" />
-        <col class="title" />
-      </colgroup>
+    <colgroup>
+      
+      <col class="alias" />
+      <col class="title" />
+    </colgroup>
 
-      <tbody>
-        <tr>
-          <th colspan="2">
-            <h2 id="section--replace-family-functions" class="hasAnchor"><a href="#section--replace-family-functions" class="anchor"></a>&quot;Replace&quot; family functions</h2>
-            <p class="section-desc"></p>
-          </th>
-        </tr>
-        <tr>
-          <!--  -->
-          <td>
-            <p><code><a href="replace_slash.html">rs_replace_slash_bs2d</a></code> <code><a href="replace_slash.html">rs_replace_slash_bd2s</a></code> <code><a href="replace_slash.html">rs_replace_slash_b2fw</a></code> <code><a href="replace_slash.html">rs_replace_slash_fw2b</a></code> </p>
-          </td>
-          <td><p>Replace slash.</p></td>
-        </tr>
-      </tbody><tbody>
-        <tr>
-          <th colspan="2">
-            <h2 id="section-add-ins-to-format-text-in-r-markdown-documents" class="hasAnchor"><a href="#section-add-ins-to-format-text-in-r-markdown-documents" class="anchor"></a>Add-ins to format text in R Markdown documents</h2>
-            <p class="section-desc"></p>
-          </th>
-        </tr>
-        <tr>
-          <!--  -->
-          <td>
-            <p><code><a href="addins.rs.html">addins.rs</a></code> </p>
-          </td>
-          <td><p>A Set of RStudio Add-ins.</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="insert_arrows.html">rs_insert_arrow_rl</a></code> <code><a href="insert_arrows.html">rs_insert_arrow_rl2</a></code> <code><a href="insert_arrows.html">rs_insert_arrow_lr</a></code> <code><a href="insert_arrows.html">rs_insert_arrow_lr2</a></code> </p>
-          </td>
-          <td><p>Insert arrow (-&gt;, -&gt;&gt;, &lt;-, &lt;&lt;-).</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="insert_lines.html">rs_insert_line_ss</a></code> <code><a href="insert_lines.html">rs_insert_line_ds</a></code> <code><a href="insert_lines.html">rs_insert_line_sw</a></code> </p>
-          </td>
-          <td><p>Insert various lines.</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="insert_magrittr_operators.html">rs_insert_pipe</a></code> <code><a href="insert_magrittr_operators.html">rs_insert_update_pipe</a></code> <code><a href="insert_magrittr_operators.html">rs_insert_exposition_pipe</a></code> <code><a href="insert_magrittr_operators.html">rs_insert_tee_pipe</a></code> </p>
-          </td>
-          <td><p>Insert magrittr operators.</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="replace_slash.html">rs_replace_slash_bs2d</a></code> <code><a href="replace_slash.html">rs_replace_slash_bd2s</a></code> <code><a href="replace_slash.html">rs_replace_slash_b2fw</a></code> <code><a href="replace_slash.html">rs_replace_slash_fw2b</a></code> </p>
-          </td>
-          <td><p>Replace slash.</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="rs_insert_infix_in.html">rs_insert_infix_in</a></code> </p>
-          </td>
-          <td><p>Insert %in%.</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="rs_insert_infix_not_in.html">rs_insert_infix_not_in</a></code> </p>
-          </td>
-          <td><p>Insert %!in%.</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="rs_insert_infix_operator.html">rs_insert_infix_operator</a></code> </p>
-          </td>
-          <td><p>Insert %%.</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="rs_insert_infix_R.html">rs_insert_infix_R</a></code> </p>
-          </td>
-          <td><p>Insert %R%.</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="rs_insert_matrix_multiplication.html">rs_insert_matrix_multiplication</a></code> </p>
-          </td>
-          <td><p>Insert %*%.</p></td>
-        </tr>
-      </tbody><tbody>
-        <tr>
-          <th colspan="2">
-            <h2 id="section-insert-operators" class="hasAnchor"><a href="#section-insert-operators" class="anchor"></a>Insert operators</h2>
-            <p class="section-desc"></p>
-          </th>
-        </tr>
-        <tr>
-          <!--  -->
-          <td>
-            <p><code><a href="insert_arrows.html">rs_insert_arrow_rl</a></code> <code><a href="insert_arrows.html">rs_insert_arrow_rl2</a></code> <code><a href="insert_arrows.html">rs_insert_arrow_lr</a></code> <code><a href="insert_arrows.html">rs_insert_arrow_lr2</a></code> </p>
-          </td>
-          <td><p>Insert arrow (-&gt;, -&gt;&gt;, &lt;-, &lt;&lt;-).</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="insert_lines.html">rs_insert_line_ss</a></code> <code><a href="insert_lines.html">rs_insert_line_ds</a></code> <code><a href="insert_lines.html">rs_insert_line_sw</a></code> </p>
-          </td>
-          <td><p>Insert various lines.</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="insert_magrittr_operators.html">rs_insert_pipe</a></code> <code><a href="insert_magrittr_operators.html">rs_insert_update_pipe</a></code> <code><a href="insert_magrittr_operators.html">rs_insert_exposition_pipe</a></code> <code><a href="insert_magrittr_operators.html">rs_insert_tee_pipe</a></code> </p>
-          </td>
-          <td><p>Insert magrittr operators.</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="rs_insert_infix_in.html">rs_insert_infix_in</a></code> </p>
-          </td>
-          <td><p>Insert %in%.</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="rs_insert_infix_not_in.html">rs_insert_infix_not_in</a></code> </p>
-          </td>
-          <td><p>Insert %!in%.</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="rs_insert_infix_operator.html">rs_insert_infix_operator</a></code> </p>
-          </td>
-          <td><p>Insert %%.</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="rs_insert_infix_R.html">rs_insert_infix_R</a></code> </p>
-          </td>
-          <td><p>Insert %R%.</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="rs_insert_matrix_multiplication.html">rs_insert_matrix_multiplication</a></code> </p>
-          </td>
-          <td><p>Insert %*%.</p></td>
-        </tr>
-      </tbody><tbody>
-        <tr>
-          <th colspan="2">
-            <h2 id="section-other" class="hasAnchor"><a href="#section-other" class="anchor"></a>Other</h2>
-            <p class="section-desc"></p>
-          </th>
-        </tr>
-        <tr>
-          <!--  -->
-          <td>
-            <p><code><a href="addins.rs.html">addins.rs</a></code> </p>
-          </td>
-          <td><p>A Set of RStudio Add-ins.</p></td>
-        </tr>
-      </tbody>
-      </table>
-    </div>
+    <tbody>
+      <tr>
+        <th colspan="2">
+          <h2 id="section-all-functions" class="hasAnchor"><a href="#section-all-functions" class="anchor"></a>All functions</h2>
+          <p class="section-desc"></p>
+        </th>
+      </tr>
+      <tr>
+        
+        <td>
+          <p><code><a href="addins.rs.html">addins.rs</a></code> </p>
+        </td>
+        <td><p>A Set of RStudio Add-ins.</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="insert_arrows.html">rs_insert_arrow_rl()</a></code> <code><a href="insert_arrows.html">rs_insert_arrow_rl2()</a></code> <code><a href="insert_arrows.html">rs_insert_arrow_lr()</a></code> <code><a href="insert_arrows.html">rs_insert_arrow_lr2()</a></code> </p>
+        </td>
+        <td><p>Insert arrow (-&gt;, -&gt;&gt;, &lt;-, &lt;&lt;-).</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="insert_lines.html">rs_insert_line_ss()</a></code> <code><a href="insert_lines.html">rs_insert_line_ds()</a></code> <code><a href="insert_lines.html">rs_insert_line_sw()</a></code> </p>
+        </td>
+        <td><p>Insert various lines.</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="insert_magrittr_operators.html">rs_insert_pipe()</a></code> <code><a href="insert_magrittr_operators.html">rs_insert_update_pipe()</a></code> <code><a href="insert_magrittr_operators.html">rs_insert_exposition_pipe()</a></code> <code><a href="insert_magrittr_operators.html">rs_insert_tee_pipe()</a></code> </p>
+        </td>
+        <td><p>Insert magrittr operators.</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="replace_slash.html">rs_replace_slash_bs2d()</a></code> <code><a href="replace_slash.html">rs_replace_slash_bd2s()</a></code> <code><a href="replace_slash.html">rs_replace_slash_b2fw()</a></code> <code><a href="replace_slash.html">rs_replace_slash_fw2b()</a></code> </p>
+        </td>
+        <td><p>Replace slash.</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="rs_align_code.html">rs_align_code()</a></code> <code><a href="rs_align_code.html">rs_align_code_at_equal()</a></code> <code><a href="rs_align_code.html">rs_align_code_at_arrow()</a></code> <code><a href="rs_align_code.html">rs_align_code_at_pipe()</a></code> </p>
+        </td>
+        <td><p>Align code at certain symbols.</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="rs_enclose_with_percent.html">rs_enclose_with_percent()</a></code> </p>
+        </td>
+        <td><p>Enclose with %%.</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="rs_insert_infix_in.html">rs_insert_infix_in()</a></code> </p>
+        </td>
+        <td><p>Insert %in%.</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="rs_insert_infix_not_in.html">rs_insert_infix_not_in()</a></code> </p>
+        </td>
+        <td><p>Insert %!in%.</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="rs_insert_infix_R.html">rs_insert_infix_R()</a></code> </p>
+        </td>
+        <td><p>Insert %R%.</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="rs_insert_integer_division.html">rs_insert_integer_division()</a></code> </p>
+        </td>
+        <td><p>Insert %/%.</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="rs_insert_matrix_multiplication.html">rs_insert_matrix_multiplication()</a></code> </p>
+        </td>
+        <td><p>Insert %*%.</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="rs_insert_modulo.html">rs_insert_modulo()</a></code> </p>
+        </td>
+        <td><p>Insert %%.</p></td>
+      </tr>
+    </tbody>
+    </table>
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
-      <li><a href="#section--replace-family-functions">&quot;Replace&quot; family functions</a></li>
-      <li><a href="#section-add-ins-to-format-text-in-r-markdown-documents">Add-ins to format text in R Markdown documents</a></li>
-      <li><a href="#section-insert-operators">Insert operators</a></li>
-      <li><a href="#section-other">Other</a></li>
+      <li><a href="#section-all-functions">All functions</a></li>
     </ul>
   </div>
 </div>
@@ -290,5 +215,8 @@
       </footer>
    </div>
 
+  
+
   </body>
 </html>
+
