@@ -7,7 +7,7 @@
 #'
 #' Call this function as an add-in to insert \code{ \%*\% } at the cursor position.
 #'
-#' @inheritParams addin.tools::rs_get_ind
+#' @inheritParams addin.tools::rs_get_index
 #'
 #' @export
 #' @seealso Operator \link[base]{\%*\%} for matrix multiplication.
@@ -22,7 +22,7 @@ rs_insert_matrix_multiplication <- function(context = rs_get_context()) {
 #'
 #' @description Call this function as an add-in to insert \code{ \%/\% } at the cursor position.
 #'
-#' @inheritParams addin.tools::rs_get_ind
+#' @inheritParams addin.tools::rs_get_index
 #' @export
 #' @seealso Operator \link[base]{\%/\%}.
 #'
@@ -37,7 +37,7 @@ rs_insert_integer_division <- function(context = rs_get_context()) {
 #'
 #' @note Operator does not work unless package which contains this operator is loaded.
 #'
-#' @inheritParams addin.tools::rs_get_ind
+#' @inheritParams addin.tools::rs_get_index
 #'
 #' @export
 #'
@@ -52,7 +52,7 @@ rs_insert_modulo <- function(context = rs_get_context()) {
 #'
 #' @description Call this function as an add-in to insert \code{ \%in\% } at the cursor position.
 #'
-#' @inheritParams addin.tools::rs_get_ind
+#' @inheritParams addin.tools::rs_get_index
 #' @export
 #' @seealso Operator \link[base]{\%in\%}.
 #'
@@ -69,7 +69,7 @@ rs_insert_infix_in <- function(context = rs_get_context()) {
 #'
 #' Call this function as an add-in to insert \code{ \%!in\% } at the cursor position.
 #'
-#' @inheritParams addin.tools::rs_get_ind
+#' @inheritParams addin.tools::rs_get_index
 #'
 #' @note Operator does not work unless a package which contains this operator is loaded.
 #'
@@ -85,7 +85,7 @@ rs_insert_infix_not_in <- function(context = rs_get_context()) {
 #'
 #' Call this function as an add-in to insert \code{ \%R\% } at the cursor position.
 #'
-#' @inheritParams addin.tools::rs_get_ind
+#' @inheritParams addin.tools::rs_get_index
 #'
 #' @note Operator does not work unless package which contains this operator is loaded.
 #'

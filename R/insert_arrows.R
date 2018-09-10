@@ -5,7 +5,7 @@
 #' RStudio add-in to insert either \code{->}, \code{->>},
 #' \code{<-} or \code{<<-} at the cursor position.
 #'
-#' @inheritParams addin.tools::rs_get_ind
+#' @inheritParams addin.tools::rs_get_index
 #'
 #' @export
 #' @note use hotkeys combination \code{ALT} + \code{-} to insert \code{<-} in RStudio.

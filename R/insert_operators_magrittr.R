@@ -10,7 +10,7 @@
 #' and \code{\%T>\%} at the cursor position.
 #' The operators are defined in package \pkg{magrittr}.
 #'
-#' @inheritParams addin.tools::rs_get_ind
+#' @inheritParams addin.tools::rs_get_index
 #'
 #' @note Operator does not work unless package \pkg{magrittr} or
 #' equivalent is loaded.

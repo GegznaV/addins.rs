@@ -2,7 +2,7 @@
 #'
 #' Call this function as an add-in to enclose selected text with percent operator \code{ \% }.
 #'
-#' @inheritParams addin.tools::rs_get_ind
+#' @inheritParams addin.tools::rs_get_index
 #'
 #' @export
 #'

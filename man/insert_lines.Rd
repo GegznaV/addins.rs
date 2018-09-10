@@ -7,11 +7,11 @@
 \alias{rs_insert_line_sw}
 \title{Insert various lines.}
 \usage{
-rs_insert_line_ss(start = rs_get_ind_first_selected_col(), end = 79)
+rs_insert_line_ss(start = rs_get_first_selected_col_index(), end = 79)
 
-rs_insert_line_ds(start = rs_get_ind_first_selected_col(), end = 79)
+rs_insert_line_ds(start = rs_get_first_selected_col_index(), end = 79)
 
-rs_insert_line_sw(start = rs_get_ind_first_selected_col(), end = 79)
+rs_insert_line_sw(start = rs_get_first_selected_col_index(), end = 79)
 }
 \arguments{
 \item{start}{(numeric) The number of column the line begins at.}

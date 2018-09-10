@@ -14,7 +14,7 @@
 #'
 #' @param start (numeric) The number of column the line begins at.
 #' @param end (numeric) The number of column the line ends at.
-#' @inheritParams addin.tools::rs_get_ind
+#' @inheritParams addin.tools::rs_get_index
 #'
 #' @family 'Insert at cursor position' addins
 NULL
@@ -22,19 +22,19 @@ NULL
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #' @name insert_lines
 #' @export
-rs_insert_line_ss <- function(start = rs_get_ind_first_selected_col(), end = 79) {
+rs_insert_line_ss <- function(start = rs_get_first_selected_col_index(), end = 79) {
     rs_insert_symbol_seq("-", start, end)
 }
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #' @name insert_lines
 #' @export
-rs_insert_line_ds <- function(start = rs_get_ind_first_selected_col(), end = 79) {
+rs_insert_line_ds <- function(start = rs_get_first_selected_col_index(), end = 79) {
     rs_insert_symbol_seq("=", start, end)
 }
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #' @name insert_lines
 #' @export
-rs_insert_line_sw <- function(start = rs_get_ind_first_selected_col(), end = 79) {
+rs_insert_line_sw <- function(start = rs_get_first_selected_col_index(), end = 79) {
     rs_insert_symbol_seq("~", start, end)
 }
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
