@@ -64,8 +64,7 @@ Install package
 
 Install development version from GitHub:
 ```{r Install package from GitHub, eval=FALSE}
-if (!require(devtools)) 
-    install.packages("devtools")
+if (!require(devtools)) install.packages("devtools")
 
 devtools::install_github("GegznaV/addin.tools")
 devtools::install_github("GegznaV/addins.rs")

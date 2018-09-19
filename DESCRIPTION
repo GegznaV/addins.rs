@@ -28,7 +28,7 @@ Remotes:
     github::GegznaV/addin.tools
 Depends:
     R (>= 3.2),
-    addin.tools (>= 0.0.3.9000)
+    addin.tools (>= 0.0.4)
 Imports:
     rstudioapi,
     magrittr,

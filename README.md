@@ -8,7 +8,7 @@ licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource
 version](https://img.shields.io/badge/GitHub-0.0.4-brightgreen.svg)](https://github.com/GegznaV/addins.rs)
 [![Travis-CI Build
 Status](https://travis-ci.org/GegznaV/addins.rs.png?branch=master)](https://travis-ci.org/GegznaV/addins.rs)
-[![Updated-on](https://img.shields.io/badge/Updated%20on-2018--09--08-yellowgreen.svg)](/commits/master)
+[![Updated-on](https://img.shields.io/badge/Updated%20on-2018--09--19-yellowgreen.svg)](/commits/master)
 <!-- [![Research software impact](http://depsy.org/api/package/cran/addins.rs/badge.svg)](http://depsy.org/package/r/addins.rs) -->
 
 <!-- [![Rdoc](http://www.rdocumentation.org/badges/version/addins.rs)](http://www.rdocumentation.org/packages/addins.rs) -->
@@ -55,8 +55,7 @@ in strings like `"c:\data\"` converted into `"c:/data/"`).
 Install development version from GitHub:
 
 ``` r
-if (!require(devtools)) 
-    install.packages("devtools")
+if (!require(devtools)) install.packages("devtools")
 
 devtools::install_github("GegznaV/addin.tools")
 devtools::install_github("GegznaV/addins.rs")
