@@ -21,6 +21,42 @@ Binding: rs_enclose_with_percent
 Interactive: false
 
 
+Name: {RS} Replace slash: \ with /
+Description: Replaces \ with / in the selected text.
+Binding: rs_replace_slash_b2fw
+Interactive: false
+
+Name: {RS} Replace slash: / with \
+Description: Replaces / with \ in the selected text.
+Binding: rs_replace_slash_fw2b
+Interactive: false
+
+Name: {RS} Replace slash: \ with \\
+Description: Replaces \ with \\ in the selected text.
+Binding: rs_replace_slash_bs2d
+Interactive: false
+
+Name: {RS} Replace slash: \\ with \
+Description: Replaces \\ with \ in the selected text.
+Binding: rs_replace_slash_bd2s
+Interactive: false
+
+
+Name: {RS} Insert date
+Description: Insert current date (yyyy-mm-dd).
+Binding: rs_insert_date
+Interactive: false
+
+Name: {RS} Insert time
+Description: Insert current time (HH:MM:SS).
+Binding: rs_insert_time
+Interactive: false
+
+Name: {RS} Insert date and time
+Description: Insert current date and time (yyyy-mm-dd HH:MM:SS).
+Binding: rs_insert_datetime
+Interactive: false
+
 Name: {RS} Operator <-
 Description: Insert `<-` at the cursor position.
 Binding: rs_insert_arrow_rl
@@ -102,25 +138,4 @@ Interactive: false
 Name: {RS} Insert double straight line (=====)
 Description: Insert sequence of symbols "=".
 Binding: rs_insert_line_ds
-Interactive: false
-
-
-Name: {RS} Replace slash: \ with /
-Description: Replaces \ with / in the selected text.
-Binding: rs_replace_slash_b2fw
-Interactive: false
-
-Name: {RS} Replace slash: / with \
-Description: Replaces / with \ in the selected text.
-Binding: rs_replace_slash_fw2b
-Interactive: false
-
-Name: {RS} Replace slash: \ with \\
-Description: Replaces \ with \\ in the selected text.
-Binding: rs_replace_slash_bs2d
-Interactive: false
-
-Name: {RS} Replace slash: \\ with \
-Description: Replaces \\ with \ in the selected text.
-Binding: rs_replace_slash_bd2s
 Interactive: false
