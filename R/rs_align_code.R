@@ -61,8 +61,3 @@ rs_align_code_at_hash <- function(context = rs_get_context()) {
     rs_align_code(stringr::fixed("#"), context = context)
 }
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-# ------------ #333333
-# ------------   # 222222
-# ------------ #111111
-                dc <- rs_get_context()
