@@ -3,8 +3,12 @@
 \docType{package}
 \name{addins.rs}
 \alias{addins.rs}
+\alias{\%>\%}
 \alias{addins.rs-package}
 \title{A Set of RStudio Add-ins.}
+\usage{
+lhs \%>\% rhs
+}
 \description{
 \code{addins.rs} provides a set of RStudio add-ins that
 are designed to be used in combination with user-defined RStudio keyboard

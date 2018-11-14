@@ -5,6 +5,7 @@
 \alias{rs_align_code_at_equal}
 \alias{rs_align_code_at_arrow}
 \alias{rs_align_code_at_pipe}
+\alias{rs_align_code_at_hash}
 \title{Align code at certain symbols.}
 \usage{
 rs_align_code(at_symbol, context = rs_get_context())
@@ -14,6 +15,8 @@ rs_align_code_at_equal(context = rs_get_context())
 rs_align_code_at_arrow(context = rs_get_context())
 
 rs_align_code_at_pipe(context = rs_get_context())
+
+rs_align_code_at_hash(context = rs_get_context())
 }
 \arguments{
 \item{at_symbol}{(character) A regular expression that represents

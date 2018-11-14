@@ -3,6 +3,7 @@
 export(rs_align_code)
 export(rs_align_code_at_arrow)
 export(rs_align_code_at_equal)
+export(rs_align_code_at_hash)
 export(rs_align_code_at_pipe)
 export(rs_enclose_with_percent)
 export(rs_insert_arrow_lr)
