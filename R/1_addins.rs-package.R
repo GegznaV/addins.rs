@@ -31,4 +31,7 @@
 #'
 #' @import addin.tools
 
+
+`%>%` <- magrittr::`%>%`
+
 NULL

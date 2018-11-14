@@ -14,6 +14,11 @@ Description: Align code in selected lines at first occurance of pipe operator `%
 Binding: rs_align_code_at_pipe
 Interactive: false
 
+Name: {RS} Align code at `#`
+Description: Align code in selected lines at first occurance of symbol `#`.
+Binding: rs_align_code_at_hash
+Interactive: false
+
 
 Name: {RS} Enclose with `%` (% %)
 Description: Enclose with `%`...`%`.

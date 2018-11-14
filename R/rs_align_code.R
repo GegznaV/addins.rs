@@ -15,7 +15,7 @@
 #' @export
 #'
 rs_align_code <- function(at_symbol, context = rs_get_context()) {
-    text        <- rs_get_selected_rows(context)
+    text        <- rs_get_selected_rows(context = context)
     row_numbers <- attr(text, "row_numbers")
 
     rez <-
@@ -54,6 +54,15 @@ rs_align_code_at_arrow <- function(context = rs_get_context()) {
 rs_align_code_at_pipe <- function(context = rs_get_context()) {
     rs_align_code(stringr::fixed("%>%"), context = context)
 }
+
+#' @rdname rs_align_code
+#' @export
+rs_align_code_at_hash <- function(context = rs_get_context()) {
+    rs_align_code(stringr::fixed("#"), context = context)
+}
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-`%>%` <- magrittr::`%>%`
+# ------------ #333333
+# ------------   # 222222
+# ------------ #111111
+                dc <- rs_get_context()
