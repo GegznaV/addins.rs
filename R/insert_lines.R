@@ -4,8 +4,8 @@
 #' @title Insert various lines.
 #' @description
 #' These functions insert sequence of symbols (the line) which by default starts
-#' at the cursor position and ends at symbol (column) 79. (It is recommended that code
-#' the line of code is not longer than 80 symbols.)
+#' at the cursor position and ends at symbol (column) 79. (It is recommended that
+#' the line of code would not be longer than 80 symbols.)
 #'
 #' Use
 #' \code{rs_insert_line_ss()} to insert \code{------};\cr
@@ -23,18 +23,18 @@ NULL
 #' @name insert_lines
 #' @export
 rs_insert_line_ss <- function(start = rs_get_first_selected_col_index(), end = 79) {
-    rs_insert_symbol_seq("-", start, end)
+    rs_insert_symbol_seq("-", start[1], end)
 }
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #' @name insert_lines
 #' @export
 rs_insert_line_ds <- function(start = rs_get_first_selected_col_index(), end = 79) {
-    rs_insert_symbol_seq("=", start, end)
+    rs_insert_symbol_seq("=", start[1], end)
 }
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #' @name insert_lines
 #' @export
 rs_insert_line_sw <- function(start = rs_get_first_selected_col_index(), end = 79) {
-    rs_insert_symbol_seq("~", start, end)
+    rs_insert_symbol_seq("~", start[1], end)
 }
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
