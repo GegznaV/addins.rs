@@ -7,8 +7,8 @@
 rs_insert_infix_not_in(context = rs_get_context())
 }
 \arguments{
-\item{context}{Object with context of active RStudio document
-(class \code{document_context}).}
+\item{context}{(class \code{document_context}) \cr
+Object with context of active RStudio document.}
 }
 \description{
 Call this function as an add-in to insert \code{ \%!in\% } at the cursor position.

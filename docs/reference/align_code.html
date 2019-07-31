@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Enclose with %%. — rs_enclose_with_percent • addins.rs</title>
+<title>Align code at certain symbols. — align_code • addins.rs</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -32,9 +32,9 @@
 
 
 
-<meta property="og:title" content="Enclose with %%. — rs_enclose_with_percent" />
+<meta property="og:title" content="Align code at certain symbols. — align_code" />
 
-<meta property="og:description" content="Call this function as an add-in to enclose selected text with percent operator  % ." />
+<meta property="og:description" content="In selected lines, align code at first occurance of certain symbol in each row." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -104,22 +104,38 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Enclose with %%.</h1>
-    <small class="dont-index">Source: <a href='https://github.com/GegznaV/addins.rs/blob/master/R/enclose.R'><code>R/enclose.R</code></a></small>
-    <div class="hidden name"><code>rs_enclose_with_percent.Rd</code></div>
+    <h1>Align code at certain symbols.</h1>
+    <small class="dont-index">Source: <a href='https://github.com/GegznaV/addins.rs/blob/master/R/rs_align_code.R'><code>R/rs_align_code.R</code></a></small>
+    <div class="hidden name"><code>align_code.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>Call this function as an add-in to enclose selected text with percent operator <code> % </code>.</p>
+    <p>In selected lines, align code at first occurance of certain symbol in each row.</p>
     
     </div>
 
-    <pre class="usage"><span class='fu'>rs_enclose_with_percent</span>(<span class='kw'>context</span> <span class='kw'>=</span> <span class='fu'>rs_get_context</span>())</pre>
+    <pre class="usage"><span class='fu'>rs_align_code</span>(<span class='no'>at_symbol</span>, <span class='kw'>context</span> <span class='kw'>=</span> <span class='fu'>rs_get_context</span>())
+
+<span class='fu'>rs_align_code_at_equal</span>(<span class='kw'>context</span> <span class='kw'>=</span> <span class='fu'>rs_get_context</span>())
+
+<span class='fu'>rs_align_code_at_arrow</span>(<span class='kw'>context</span> <span class='kw'>=</span> <span class='fu'>rs_get_context</span>())
+
+<span class='fu'>rs_align_code_at_pipe_operator</span>(<span class='kw'>context</span> <span class='kw'>=</span> <span class='fu'>rs_get_context</span>())
+
+<span class='fu'>rs_align_code_at_hash</span>(<span class='kw'>context</span> <span class='kw'>=</span> <span class='fu'>rs_get_context</span>())
+
+<span class='fu'>rs_align_code_at_vertical_bar</span>(<span class='kw'>context</span> <span class='kw'>=</span> <span class='fu'>rs_get_context</span>())</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>at_symbol</th>
+      <td><p>(character) <br />
+A regular expression that represents symbol treated as reference for
+code alignment.</p></td>
+    </tr>
     <tr>
       <th>context</th>
       <td><p>(class <code>document_context</code>) <br />
@@ -127,15 +143,9 @@ Object with context of active RStudio document.</p></td>
     </tr>
     </table>
     
-    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
+    <h2 class="hasAnchor" id="note"><a class="anchor" href="#note"></a>Note</h2>
 
-    <div class='dont-index'><p>Other 'Insert at cursor position' add-ins: <code><a href='insert_magrittr_operators.html'>insert_magrittr_operators</a></code>,
-  <code><a href='rs_insert_infix_R.html'>rs_insert_infix_R</a></code>,
-  <code><a href='rs_insert_infix_in.html'>rs_insert_infix_in</a></code>,
-  <code><a href='rs_insert_infix_not_in.html'>rs_insert_infix_not_in</a></code>,
-  <code><a href='rs_insert_integer_division.html'>rs_insert_integer_division</a></code>,
-  <code><a href='rs_insert_matrix_multiplication.html'>rs_insert_matrix_multiplication</a></code>,
-  <code><a href='rs_insert_modulo.html'>rs_insert_modulo</a></code></p></div>
+    <p>Inspired by <a href='https://github.com/seasmith/AlignAssign'>https://github.com/seasmith/AlignAssign</a>.</p>
     
 
   </div>
@@ -144,7 +154,7 @@ Object with context of active RStudio document.</p></td>
     <ul class="nav nav-pills nav-stacked">
       <li><a href="#arguments">Arguments</a></li>
       
-      <li><a href="#see-also">See also</a></li>
+      <li><a href="#note">Note</a></li>
           </ul>
 
   </div>

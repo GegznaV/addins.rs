@@ -17,6 +17,7 @@
 #' \code{Bug reports and suggestions:} \url{https://github.com/GegznaV/addins.rs/issues} \cr
 #' \code{Author:} Vilmantas Gegzna
 #'
+#'
 #' @seealso
 #'
 #' Use the links below to learn more about RStudio add-ins
@@ -30,8 +31,8 @@
 #'
 #'
 #' @import addin.tools
+#' @importFrom magrittr "%>%"
+#' @importFrom utils globalVariables
 
 
-`%>%` <- magrittr::`%>%`
-
-NULL
+utils::globalVariables(c("start", "shift", "spaces"))
