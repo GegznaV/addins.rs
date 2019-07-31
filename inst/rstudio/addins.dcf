@@ -11,12 +11,17 @@ Interactive: false
 
 Name: {RS} Align code at `%>%`
 Description: Align code in selected lines at first occurance of pipe operator `%>%`.
-Binding: rs_align_code_at_pipe
+Binding: rs_align_code_at_pipe_operator
 Interactive: false
 
 Name: {RS} Align code at `#`
 Description: Align code in selected lines at first occurance of symbol `#`.
 Binding: rs_align_code_at_hash
+Interactive: false
+
+Name: {RS} Align code at `|`
+Description: Align code in selected lines at first occurance of symbol `|`.
+Binding: rs_align_code_at_vertical_bar
 Interactive: false
 
 
@@ -62,69 +67,69 @@ Description: Insert current date and time (yyyy-mm-dd HH:MM:SS).
 Binding: rs_insert_datetime
 Interactive: false
 
-Name: {RS} Operator <-
+Name: {RS} Insert operator <-
 Description: Insert `<-` at the cursor position.
 Binding: rs_insert_arrow_rl
 Interactive: false
 
-Name: {RS} Operator <<-
+Name: {RS} Insert operator <<-
 Description: Insert `<<-` at the cursor position.
 Binding: rs_insert_arrow_rl2
 Interactive: false
 
-Name: {RS} Operator ->
+Name: {RS} Insert operator ->
 Description: Insert `->` at the cursor position.
 Binding: rs_insert_arrow_lr
 Interactive: false
 
-Name: {RS} Operator ->>
+Name: {RS} Insert operator ->>
 Description: Insert `->>` at the cursor position.
 Binding: rs_insert_arrow_lr2
 Interactive: false
 
 
-Name: {RS} Operator %>%
+Name: {RS} Insert operator %>%
 Description: Insert `%>%` at the cursor position.
 Binding: rs_insert_pipe
 Interactive: false
 
-Name: {RS} Operator %<>%
+Name: {RS} Insert operator %<>%
 Description: Insert `%<>%` at the cursor position.
 Binding: rs_insert_update_pipe
 Interactive: false
 
-Name: {RS} Operator %$%
+Name: {RS} Insert operator %$%
 Description: Insert `%$%` at the cursor position.
 Binding: rs_insert_exposition_pipe
 Interactive: false
 
-Name: {RS} Operator %T>%
+Name: {RS} Insert operator %T>%
 Description: Insert `%T>%` at the cursor position.
 Binding: rs_insert_tee_pipe
 Interactive: false
 
 
-Name: {RS} Operator %%      (modulo)
+Name: {RS} Insert operator %%      (modulo)
 Description: Insert modulo operator `%%`.
 Binding: rs_insert_modulo
 Interactive: false
 
-Name: {RS} Operator %/%     (integer division)
+Name: {RS} Insert operator %/%     (integer division)
 Description: Insert `%/%` at the cursor position.
 Binding: rs_insert_integer_division
 Interactive: false
 
-Name: {RS} Operator %*%     (matrix miltiplication)
+Name: {RS} Insert operator %*%     (matrix miltiplication)
 Description: Insert `%*%` at the cursor position.
 Binding: rs_insert_matrix_multiplication
 Interactive: false
 
-Name: {RS} Operator %in%
+Name: {RS} Insert operator %in%
 Description: Insert `%in%` at the cursor position.
 Binding: rs_insert_infix_in
 Interactive: false
 
-Name: {RS} Operator %!in%
+Name: {RS} Insert operator %!in%
 Description: Insert `%!in%` at the cursor position.
 Binding: rs_insert_infix_not_in
 Interactive: false
