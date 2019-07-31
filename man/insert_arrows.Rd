@@ -17,8 +17,8 @@ rs_insert_arrow_lr(context = rs_get_context())
 rs_insert_arrow_lr2(context = rs_get_context())
 }
 \arguments{
-\item{context}{Object with context of active RStudio document
-(class \code{document_context}).}
+\item{context}{(class \code{document_context}) \cr
+Object with context of active RStudio document.}
 }
 \description{
 RStudio add-in to insert either \code{->}, \code{->>},
@@ -49,6 +49,6 @@ rs_insert_arrow_lr2()
 \seealso{
 Assignment operators \link[base]{assignOps}.\cr
 
-Other 'Insert at cursor position' addins: \code{\link{insert_lines}}
+Other 'Insert at cursor position' addins: \code{\link{insert_line}}
 }
 \concept{'Insert at cursor position' addins}

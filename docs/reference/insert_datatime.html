@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Enclose with %%. — rs_enclose_with_percent • addins.rs</title>
+<title>Insert date and time. — rs_insert_datetime • addins.rs</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -32,9 +32,9 @@
 
 
 
-<meta property="og:title" content="Enclose with %%. — rs_enclose_with_percent" />
+<meta property="og:title" content="Insert date and time. — rs_insert_datetime" />
 
-<meta property="og:description" content="Call this function as an add-in to enclose selected text with percent operator  % ." />
+<meta property="og:description" content="RStudio add-in to insert date and time at the cursor position." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -104,18 +104,22 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Enclose with %%.</h1>
-    <small class="dont-index">Source: <a href='https://github.com/GegznaV/addins.rs/blob/master/R/enclose.R'><code>R/enclose.R</code></a></small>
-    <div class="hidden name"><code>rs_enclose_with_percent.Rd</code></div>
+    <h1>Insert date and time.</h1>
+    <small class="dont-index">Source: <a href='https://github.com/GegznaV/addins.rs/blob/master/R/rs_insert_datetime.R'><code>R/rs_insert_datetime.R</code></a></small>
+    <div class="hidden name"><code>insert_datatime.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>Call this function as an add-in to enclose selected text with percent operator <code> % </code>.</p>
+    <p>RStudio add-in to insert date and time at the cursor position.</p>
     
     </div>
 
-    <pre class="usage"><span class='fu'>rs_enclose_with_percent</span>(<span class='kw'>context</span> <span class='kw'>=</span> <span class='fu'>rs_get_context</span>())</pre>
+    <pre class="usage"><span class='fu'>rs_insert_datetime</span>(<span class='kw'>context</span> <span class='kw'>=</span> <span class='fu'>rs_get_context</span>())
+
+<span class='fu'>rs_insert_date</span>(<span class='kw'>context</span> <span class='kw'>=</span> <span class='fu'>rs_get_context</span>())
+
+<span class='fu'>rs_insert_time</span>(<span class='kw'>context</span> <span class='kw'>=</span> <span class='fu'>rs_get_context</span>())</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -127,25 +131,13 @@ Object with context of active RStudio document.</p></td>
     </tr>
     </table>
     
-    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
-
-    <div class='dont-index'><p>Other 'Insert at cursor position' add-ins: <code><a href='insert_magrittr_operators.html'>insert_magrittr_operators</a></code>,
-  <code><a href='rs_insert_infix_R.html'>rs_insert_infix_R</a></code>,
-  <code><a href='rs_insert_infix_in.html'>rs_insert_infix_in</a></code>,
-  <code><a href='rs_insert_infix_not_in.html'>rs_insert_infix_not_in</a></code>,
-  <code><a href='rs_insert_integer_division.html'>rs_insert_integer_division</a></code>,
-  <code><a href='rs_insert_matrix_multiplication.html'>rs_insert_matrix_multiplication</a></code>,
-  <code><a href='rs_insert_modulo.html'>rs_insert_modulo</a></code></p></div>
-    
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
       <li><a href="#arguments">Arguments</a></li>
-      
-      <li><a href="#see-also">See also</a></li>
-          </ul>
+                </ul>
 
   </div>
 </div>
