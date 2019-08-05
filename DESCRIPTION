@@ -1,7 +1,7 @@
 Package: addins.rs
 Type: Package
 Title: RStudio Add-ins to Insert Operators and Modify Text
-Version: 0.0.5
+Version: 0.0.5.9000
 Date: 2019-07-31
 Authors@R: person("Vilmantas", "Gegzna",
                     email = "GegznaV@gmail.com",
@@ -30,12 +30,13 @@ Depends:
     R (>= 3.2),
     addin.tools (>= 0.0.6)
 Imports:
-    rstudioapi,
-    magrittr,
     checkmate,
-    stringr,
     dplyr,
+    gtools,
+    magrittr,
     purrr,
+    rstudioapi,
+    stringr,
     utils
 Suggests:
     knitr,
