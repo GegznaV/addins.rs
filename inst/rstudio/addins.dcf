@@ -25,6 +25,17 @@ Binding: rs_align_code_at_vertical_bar
 Interactive: false
 
 
+Name: {RS} Sort rows (ascending): a → z
+Description: Sort rows in ascending order.
+Binding: rs_sort_rows_ascending
+Interactive: false
+
+Name: {RS} Sort rows (descending): z → a
+Description: Sort rows in descending order.
+Binding: rs_sort_rows_descending
+Interactive: false
+
+
 Name: {RS} Enclose with `%` (% %)
 Description: Enclose with `%`...`%`.
 Binding: rs_enclose_with_percent
@@ -149,3 +160,4 @@ Name: {RS} Insert double straight line (=====)
 Description: Insert sequence of symbols "=".
 Binding: rs_insert_line_ds
 Interactive: false
+
