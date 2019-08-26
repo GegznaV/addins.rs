@@ -1,8 +1,8 @@
 Package: addins.rs
 Type: Package
 Title: RStudio Add-ins to Insert Operators and Modify Text
-Version: 0.0.5.9000
-Date: 2019-07-31
+Version: 0.0.6
+Date: 2019-08-26
 Authors@R: person("Vilmantas", "Gegzna",
                     email = "GegznaV@gmail.com",
                     role = c("aut", "cre","cph")
