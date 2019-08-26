@@ -25,12 +25,12 @@ Binding: rs_align_code_at_vertical_bar
 Interactive: false
 
 
-Name: {RS} Sort rows (ascending): a → z
+Name: {RS} Sort rows (ascending): a → z, 0 → 9
 Description: Sort rows in ascending order.
 Binding: rs_sort_rows_ascending
 Interactive: false
 
-Name: {RS} Sort rows (descending): z → a
+Name: {RS} Sort rows (descending): z → a, 9 → 0
 Description: Sort rows in descending order.
 Binding: rs_sort_rows_descending
 Interactive: false
