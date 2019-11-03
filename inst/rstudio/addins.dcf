@@ -35,6 +35,21 @@ Description: Sort rows in descending order.
 Binding: rs_sort_rows_descending
 Interactive: false
 
+Name: {RS} Highlight duplicates of the first row (exclusive)
+Description: In selection, highlight rows that are duplicates of rows above.
+Binding: rs_highlight_first_row_duplicates
+Interactive: false
+
+Name: {RS} Highlight all duplicates of rows (inclusive)
+Description: In selection, highlight all rows that are duplicates.
+Binding: rs_highlight_row_duplicates_all
+Interactive: false
+
+Name: {RS} Highlight duplicates of rows (exclusive)
+Description: In selection, highlight rows that are duplicates of any rows above.
+Binding: rs_highlight_row_duplicates
+Interactive: false
+
 
 Name: {RS} Enclose with `%` (% %)
 Description: Enclose with `%`...`%`.
