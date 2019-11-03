@@ -2,7 +2,7 @@
 # @rdname align_code
 # @export
 
-# TODO: create new algorithm that aligns in selections only.
+# TODO: create a new algorithm that aligns in selections only.
 
 # rs_align_code__in_selectios <- function(at_symbol, context = rs_get_context()) {
 #
