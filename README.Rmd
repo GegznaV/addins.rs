@@ -12,6 +12,8 @@ knitr::opts_chunk$set(
 )
 ```
 
+<!-- badges: start -->
+
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/addins.rs)](https://cran.r-project.org/package=addins.rs)
 [![GitHub version](https://img.shields.io/badge/GitHub-`r packageVersion("addins.rs")`-brightgreen.svg)](https://github.com/GegznaV/addins.rs)
@@ -20,6 +22,10 @@ knitr::opts_chunk$set(
 <!-- [![Research software impact](http://depsy.org/api/package/cran/addins.rs/badge.svg)](http://depsy.org/package/r/addins.rs) -->
 
 <!-- [![Rdoc](http://www.rdocumentation.org/badges/version/addins.rs)](http://www.rdocumentation.org/packages/addins.rs) -->
+
+<!-- badges: end -->
+
+
 
 <!--
 ```{r, fig.align='center', out.height='30%', out.width='30%', echo=FALSE, eval = FALSE}
