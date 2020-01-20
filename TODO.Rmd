@@ -12,7 +12,7 @@ output: html_document
     * [+] Delete temporary functions at `FIXME`.
     * [ ] Create a new algorithm that aligns text only in selections, and not in
           rows with selection.
-    * [ ] Create a Shiny (or Tcl/Tk) based interactive add-in to choose a character
+    * [+] Create a Shiny (or Tcl/Tk) based interactive add-in to choose a character
           or a sequence of characters to align code at.
     * [ ] Create an add-in to undo the alignment (to remove spaces).
 3. 
