@@ -40,17 +40,17 @@ Description: Sort rows in descending order.
 Binding: rs_sort_rows_descending
 Interactive: false
 
-Name: {RS} Highlight duplicates of the first row (exclusive)
+Name: {RS} Highlight duplicates of the first selected row
 Description: In selection, highlight rows that are duplicates of rows above.
 Binding: rs_highlight_first_row_duplicates
 Interactive: false
 
-Name: {RS} Highlight all duplicates of rows (inclusive)
+Name: {RS} Highlight all rows that have duplicates
 Description: In selection, highlight all rows that are duplicates.
 Binding: rs_highlight_row_duplicates_all
 Interactive: false
 
-Name: {RS} Highlight duplicates of rows (exclusive)
+Name: {RS} Highlight rows that are duplicates of rows above
 Description: In selection, highlight rows that are duplicates of any rows above.
 Binding: rs_highlight_row_duplicates
 Interactive: false
