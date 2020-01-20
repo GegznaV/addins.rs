@@ -1,8 +1,8 @@
 Package: addins.rs
 Type: Package
 Title: RStudio Add-ins to Insert Operators and Modify Text
-Version: 0.0.6.9001
-Date: 2019-10-28
+Version: 0.0.6.9002
+Date: 2020-01-21
 Authors@R: c(
   person("Vilmantas", "Gegzna", email = "GegznaV@gmail.com", role = c("aut", "cre", "cph"))
   )
@@ -15,13 +15,13 @@ Description: A set of RStudio add-ins that are designed to be used in
              backslashes to forward slashes which results in stings like
              "c:\data\" converted into "c:/data/");
              3) align code.
-URL:        https://github.com/GegznaV/addins.rs
+URL: https://github.com/GegznaV/addins.rs
 BugReports: https://github.com/GegznaV/addins.rs/issues
 License: MIT + file LICENSE
 LazyData: TRUE
 ByteCompile: TRUE
 Encoding: UTF-8
-RoxygenNote: 6.1.1
+RoxygenNote: 7.0.2
 VignetteBuilder: knitr
 Remotes:
     github::GegznaV/addin.tools
@@ -33,8 +33,10 @@ Imports:
     dplyr,
     gtools,
     magrittr,
+    miniUI (>= 0.1.1),
     purrr,
-    rstudioapi,
+    rstudioapi (>= 0.5),
+    shiny (>= 0.13),
     stringr,
     utils
 Suggests:
