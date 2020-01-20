@@ -1,28 +1,33 @@
 
 Name: {RS} Align code at `=`
-Description: Align code in selected lines at first occurance of `=` symbol.
+Description: Align code in selected lines at the first occurance of `=` symbol.
 Binding: rs_align_code_at_equal
 Interactive: false
 
 Name: {RS} Align code at `<-`
-Description: Align code in selected lines at first occurance of assingment operator `<-`.
+Description: Align code in selected lines at the first occurance of assingment operator `<-`.
 Binding: rs_align_code_at_arrow
 Interactive: false
 
 Name: {RS} Align code at `%>%`
-Description: Align code in selected lines at first occurance of pipe operator `%>%`.
+Description: Align code in selected lines at the first occurance of pipe operator `%>%`.
 Binding: rs_align_code_at_pipe_operator
 Interactive: false
 
 Name: {RS} Align code at `#`
-Description: Align code in selected lines at first occurance of symbol `#`.
+Description: Align code in selected lines at the first occurance of symbol `#`.
 Binding: rs_align_code_at_hash
 Interactive: false
 
 Name: {RS} Align code at `|`
-Description: Align code in selected lines at first occurance of symbol `|`.
+Description: Align code in selected lines at the first occurance of symbol `|`.
 Binding: rs_align_code_at_vertical_bar
 Interactive: false
+
+Name: {RS} Align code at pattern
+Description: Align code in selected lines at the first occurance of a pattern.
+Binding: rs_align_code_at_pattern
+Interactive: true
 
 
 Name: {RS} Sort rows (ascending): a → z, 0 → 9
@@ -175,4 +180,20 @@ Name: {RS} Insert double straight line (=====)
 Description: Insert sequence of symbols "=".
 Binding: rs_insert_line_ds
 Interactive: false
+
+Name: Insert quotes (lower „)
+Description: Insert quotes symbol („)
+Binding: rs_insert_quotes_double_lower
+Interactive: false
+
+Name: Insert quotes (upper “, C)
+Description: Insert quotes symbol (“)
+Binding: rs_insert_quotes_double_upper_c
+Interactive: false
+
+Name: Insert quotes (upper ”, D)
+Description: Insert quotes symbol (”)
+Binding: rs_insert_quotes_double_upper_d
+Interactive: false
+
 
