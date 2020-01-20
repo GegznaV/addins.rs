@@ -7,8 +7,11 @@
 \alias{rs_sort_rows_descending}
 \title{Sort selected lines.}
 \usage{
-rs_sort_rows(decreasing = FALSE, numeric.type = "decimal",
-  context = rs_get_context())
+rs_sort_rows(
+  decreasing = FALSE,
+  numeric.type = "decimal",
+  context = rs_get_context()
+)
 
 rs_sort_rows_ascending(context = rs_get_context())
 
