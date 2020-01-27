@@ -33,3 +33,4 @@ vignettes/*.pdf
 *.knit.md
 .Rproj.user
 _tmp/
+_tmp/tmp-functions.R
