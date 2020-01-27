@@ -34,3 +34,4 @@ vignettes/*.pdf
 .Rproj.user
 _tmp/
 _tmp/tmp-functions.R
+docs/
