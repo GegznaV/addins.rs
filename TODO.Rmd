@@ -15,4 +15,25 @@ output: html_document
     * [+] Create a Shiny (or Tcl/Tk) based interactive add-in to choose a character
           or a sequence of characters to align code at.
     * [ ] Create an add-in to undo the alignment (to remove spaces).
-3. 
+3. Insert more symbols:
+```
+Name: {RS} Insert superscript 0 (Alt+ )
+Description: Insert superscript 0 
+Binding: rs_insert_superscript_0
+Interactive: false
+
+Name: {RS} Insert superscript 1 (Alt+ )
+Description: Insert superscript 1 
+Binding: rs_insert_superscript_1
+Interactive: false
+
+Name: {RS} Insert superscript 2 (Alt+ )
+Description: Insert superscript 2 
+Binding: rs_insert_superscript_2
+Interactive: false
+
+Name: {RS} Insert superscript 3 (Alt+ )
+Description: Insert superscript 3 
+Binding: rs_insert_superscript_3
+Interactive: false
+```
