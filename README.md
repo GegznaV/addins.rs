@@ -1,17 +1,21 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+<!-- badges: start -->
+
 [![MIT
 licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/addins.rs)](https://cran.r-project.org/package=addins.rs)
 [![GitHub
-version](https://img.shields.io/badge/GitHub-0.0.5-brightgreen.svg)](https://github.com/GegznaV/addins.rs)
+version](https://img.shields.io/badge/GitHub-0.0.7-brightgreen.svg)](https://github.com/GegznaV/addins.rs)
 [![Travis-CI Build
 Status](https://travis-ci.org/GegznaV/addins.rs.png?branch=master)](https://travis-ci.org/GegznaV/addins.rs)
-[![Updated-on](https://img.shields.io/badge/Updated%20on-2019--07--31-yellowgreen.svg)](/commits/master)
+[![Updated-on](https://img.shields.io/badge/Updated%20on-2020--01--27-yellowgreen.svg)](/commits/master)
 <!-- [![Research software impact](http://depsy.org/api/package/cran/addins.rs/badge.svg)](http://depsy.org/package/r/addins.rs) -->
 
 <!-- [![Rdoc](http://www.rdocumentation.org/badges/version/addins.rs)](http://www.rdocumentation.org/packages/addins.rs) -->
+
+<!-- badges: end -->
 
 <!--
 
@@ -19,17 +23,17 @@ Status](https://travis-ci.org/GegznaV/addins.rs.png?branch=master)](https://trav
 
 -----
 
-<img src="http://gegznav.github.io/addins.rs/logo.png" align="right" width="15%" height="15%"/>
+<!-- <img src="http://gegznav.github.io/addins.rs/logo.png" align="right" width="15%" height="15%"/>  -->
 
 # R package **addins.rs**
 
 Package `addins.rs` is an R package that provides a set of RStudio
-addins which are designed to be used in combination with user-defined
+add-ins which are designed to be used in combination with user-defined
 RStudio keyboard shortcuts. These add-ins:
 
-1)  Insert various R operatiors, including `%>%`, `<<-`, `%$%`;
+1)  Insert various R operators, including `%>%`, `<<-`, `%$%`;  
 2)  Replace certain symbols (e.g., strings like `"c:\data\"` converted
-    into `"c:/data/"`. This can be useful for Windows users);
+    into `"c:/data/"`. This can be useful for Windows users);  
 3)  Align code at certain symbols.
 
 <!-- 
@@ -55,10 +59,10 @@ in strings like `"c:\data\"` converted into `"c:/data/"`).
 Install development version from GitHub:
 
 ``` r
-if (!require(devtools)) install.packages("devtools")
+if (!require(remotes)) install.packages("remotes")
 
-devtools::install_github("GegznaV/addin.tools")
-devtools::install_github("GegznaV/addins.rs")
+remotes::install_github("GegznaV/addin.tools")
+remotes::install_github("GegznaV/addins.rs")
 ```
 
 <!-- Recommended workflow and a few examples -->
