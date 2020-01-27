@@ -3,7 +3,6 @@
 \docType{package}
 \name{addins.rs}
 \alias{addins.rs}
-\alias{addins.rs-package}
 \title{A Set of RStudio Add-ins.}
 \description{
 \code{addins.rs} provides a set of RStudio add-ins that

@@ -31,6 +31,8 @@
 #'
 #'
 #' @import addin.tools
+#' @import shiny
+#' @import miniUI
 #' @importFrom magrittr "%>%"
 #' @importFrom utils globalVariables
 

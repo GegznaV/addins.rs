@@ -1,12 +1,11 @@
 Package: addins.rs
 Type: Package
 Title: RStudio Add-ins to Insert Operators and Modify Text
-Version: 0.0.6
-Date: 2019-08-26
-Authors@R: person("Vilmantas", "Gegzna",
-                    email = "GegznaV@gmail.com",
-                    role = c("aut", "cre","cph")
-            )
+Version: 0.0.7
+Date: 2020-01-21
+Authors@R: c(
+  person("Vilmantas", "Gegzna", email = "GegznaV@gmail.com", role = c("aut", "cre", "cph"))
+  )
 Description: A set of RStudio add-ins that are designed to be used in
              combination with user-defined RStudio keyboard shortcuts. These
              add-ins:
@@ -22,20 +21,22 @@ License: MIT + file LICENSE
 LazyData: TRUE
 ByteCompile: TRUE
 Encoding: UTF-8
-RoxygenNote: 6.1.1.9000
+RoxygenNote: 7.0.2
 VignetteBuilder: knitr
 Remotes:
     github::GegznaV/addin.tools
 Depends:
     R (>= 3.2),
-    addin.tools (>= 0.0.7)
+    addin.tools (>= 0.0.8)
 Imports:
     checkmate,
     dplyr,
     gtools,
     magrittr,
+    miniUI (>= 0.1.1),
     purrr,
-    rstudioapi,
+    rstudioapi (>= 0.5),
+    shiny (>= 0.13),
     stringr,
     utils
 Suggests:

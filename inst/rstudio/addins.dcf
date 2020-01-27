@@ -1,38 +1,58 @@
 
-Name: {RS} Align code at `=`
-Description: Align code in selected lines at first occurance of `=` symbol.
+Name: {RS} Align text at `=`
+Description: Align text/code in selected lines at the first occurrence of `=` symbol.
 Binding: rs_align_code_at_equal
 Interactive: false
 
-Name: {RS} Align code at `<-`
-Description: Align code in selected lines at first occurance of assingment operator `<-`.
+Name: {RS} Align text at `<-`
+Description: Align text/code in selected lines at the first occurrence of assignment operator `<-`.
 Binding: rs_align_code_at_arrow
 Interactive: false
 
-Name: {RS} Align code at `%>%`
-Description: Align code in selected lines at first occurance of pipe operator `%>%`.
+Name: {RS} Align text at `%>%`
+Description: Align text/code in selected lines at the first occurrence of pipe operator `%>%`.
 Binding: rs_align_code_at_pipe_operator
 Interactive: false
 
-Name: {RS} Align code at `#`
-Description: Align code in selected lines at first occurance of symbol `#`.
+Name: {RS} Align text at `#`
+Description: Align text/code in selected lines at the first occurrence of symbol `#`.
 Binding: rs_align_code_at_hash
 Interactive: false
 
-Name: {RS} Align code at `|`
-Description: Align code in selected lines at first occurance of symbol `|`.
+Name: {RS} Align text at `|`
+Description: Align text/code in selected lines at the first occurrence of symbol `|`.
 Binding: rs_align_code_at_vertical_bar
 Interactive: false
 
+Name: {RS} Align text at custom pattern
+Description: Align text/code in selected lines at the first occurrence of an indicated pattern.
+Binding: rs_align_code_at_pattern
+Interactive: true
+
 
 Name: {RS} Sort rows (ascending): a → z, 0 → 9
-Description: Sort rows in ascending order.
+Description: Sort rows in mixed (letters/numbers) ascending order.
 Binding: rs_sort_rows_ascending
 Interactive: false
 
 Name: {RS} Sort rows (descending): z → a, 9 → 0
-Description: Sort rows in descending order.
+Description: Sort rows in mixed (letters/numbers) descending order.
 Binding: rs_sort_rows_descending
+Interactive: false
+
+Name: {RS} Highlight duplicates of the first selected row
+Description: In selection, highlight rows that are duplicates of rows above.
+Binding: rs_highlight_first_row_duplicates
+Interactive: false
+
+Name: {RS} Highlight all rows that have duplicates
+Description: In selection, highlight all rows that are duplicates.
+Binding: rs_highlight_row_duplicates_all
+Interactive: false
+
+Name: {RS} Highlight rows that are duplicates of rows above
+Description: In selection, highlight rows that are duplicates of any rows above.
+Binding: rs_highlight_row_duplicates
 Interactive: false
 
 
@@ -130,7 +150,7 @@ Description: Insert `%/%` at the cursor position.
 Binding: rs_insert_integer_division
 Interactive: false
 
-Name: {RS} Insert operator %*%     (matrix miltiplication)
+Name: {RS} Insert operator %*%     (matrix multiplication)
 Description: Insert `%*%` at the cursor position.
 Binding: rs_insert_matrix_multiplication
 Interactive: false
@@ -140,9 +160,19 @@ Description: Insert `%in%` at the cursor position.
 Binding: rs_insert_infix_in
 Interactive: false
 
-Name: {RS} Insert operator %!in%
-Description: Insert `%!in%` at the cursor position.
-Binding: rs_insert_infix_not_in
+Name: {RS} Insert quotes lower „ (Alt+0132)
+Description: Insert quotation symbol („, Alt+0132)
+Binding: rs_insert_quotes_double_lower
+Interactive: false
+
+Name: {RS} Insert quotes upper “ (Alt+0147)
+Description: Insert quotation symbol (“, Alt+0147)
+Binding: rs_insert_quotes_double_upper_c
+Interactive: false
+
+Name: {RS} Insert quotes upper ” (Alt+0148)
+Description: Insert quotation symbol (”, Alt+0148)
+Binding: rs_insert_quotes_double_upper_d
 Interactive: false
 
 
@@ -160,4 +190,6 @@ Name: {RS} Insert double straight line (=====)
 Description: Insert sequence of symbols "=".
 Binding: rs_insert_line_ds
 Interactive: false
+
+
 

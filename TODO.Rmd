@@ -1,0 +1,39 @@
+---
+title: "TODO list"
+date: "2019-11-03"
+output: html_document
+---
+
+
+1.  `highlight_row_duplicates.R`:
+    * Review functionality of the functions in the file issue: rows are 
+      highlighted but cannot be modified as the file loses focus).
+2. `rs_align_code.R`:
+    * [+] Delete temporary functions at `FIXME`.
+    * [ ] Create a new algorithm that aligns text only in selections, and not in
+          rows with selection.
+    * [+] Create a Shiny (or Tcl/Tk) based interactive add-in to choose a character
+          or a sequence of characters to align code at.
+    * [ ] Create an add-in to undo the alignment (to remove spaces).
+3. Insert more symbols:
+```
+Name: {RS} Insert superscript 0 (Alt+ )
+Description: Insert superscript 0 
+Binding: rs_insert_superscript_0
+Interactive: false
+
+Name: {RS} Insert superscript 1 (Alt+ )
+Description: Insert superscript 1 
+Binding: rs_insert_superscript_1
+Interactive: false
+
+Name: {RS} Insert superscript 2 (Alt+ )
+Description: Insert superscript 2 
+Binding: rs_insert_superscript_2
+Interactive: false
+
+Name: {RS} Insert superscript 3 (Alt+ )
+Description: Insert superscript 3 
+Binding: rs_insert_superscript_3
+Interactive: false
+```

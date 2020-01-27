@@ -49,6 +49,7 @@ rs_insert_arrow_lr2()
 \seealso{
 Assignment operators \link[base]{assignOps}.\cr
 
-Other 'Insert at cursor position' addins: \code{\link{insert_line}}
+Other 'Insert at cursor position' addins: 
+\code{\link{insert_line}}
 }
 \concept{'Insert at cursor position' addins}

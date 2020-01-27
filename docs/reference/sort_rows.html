@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Authors • addins.rs</title>
+<title>Sort selected lines. — sort_rows • addins.rs</title>
 
 
 <!-- jquery -->
@@ -29,13 +29,15 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
-<link href="pkgdown.css" rel="stylesheet">
-<script src="pkgdown.js"></script>
+<link href="../pkgdown.css" rel="stylesheet">
+<script src="../pkgdown.js"></script>
 
 
 
 
-<meta property="og:title" content="Authors" />
+<meta property="og:title" content="Sort selected lines. — sort_rows" />
+<meta property="og:description" content="Functions sort selected lines. And sort numbers as numbers not alphabetically." />
+<meta name="twitter:card" content="summary" />
 
 
 
@@ -51,11 +53,11 @@
 
 
 
-  	<link rel="icon" href="favicon.png" />
+  	<link rel="icon" href="../favicon.png" />
 </head>
 
   <body>
-    <div class="container template-authors">
+    <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -67,7 +69,7 @@
         <span class="icon-bar"></span>
       </button>
       <span class="navbar-brand">
-        <a class="navbar-link" href="index.html">addins.rs</a>
+        <a class="navbar-link" href="../index.html">addins.rs</a>
         <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.7</span>
       </span>
     </div>
@@ -75,13 +77,13 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="index.html">
+  <a href="../index.html">
     <span class="fas fa fas fa-home fa-lg"></span>
      
   </a>
 </li>
 <li>
-  <a href="reference/index.html">Reference</a>
+  <a href="../reference/index.html">Reference</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -102,22 +104,63 @@
       </header>
 
 <div class="row">
-  <div class="contents col-md-9">
+  <div class="col-md-9 contents">
     <div class="page-header">
-      <h1>Authors</h1>
+    <h1>Sort selected lines.</h1>
+    <small class="dont-index">Source: <a href='https://github.com/GegznaV/addins.rs/blob/master/R/rs_sort_rows.R'><code>R/rs_sort_rows.R</code></a></small>
+    <div class="hidden name"><code>sort_rows.Rd</code></div>
     </div>
 
-    <ul class="list-unstyled">
-      <li>
-        <p><strong>Vilmantas Gegzna</strong>. Author, maintainer, copyright holder. 
-        </p>
-      </li>
+    <div class="ref-description">
+    <p>Functions sort selected lines. And sort numbers as numbers not alphabetically.</p>
+    </div>
+
+    <pre class="usage"><span class='fu'>rs_sort_rows</span>(
+  <span class='kw'>decreasing</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>,
+  <span class='kw'>numeric.type</span> <span class='kw'>=</span> <span class='st'>"decimal"</span>,
+  <span class='kw'>context</span> <span class='kw'>=</span> <span class='fu'>rs_get_context</span>()
+)
+
+<span class='fu'>rs_sort_rows_ascending</span>(<span class='kw'>context</span> <span class='kw'>=</span> <span class='fu'>rs_get_context</span>())
+
+<span class='fu'>rs_sort_rows_descending</span>(<span class='kw'>context</span> <span class='kw'>=</span> <span class='fu'>rs_get_context</span>())</pre>
+
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>decreasing</th>
+      <td><p>logical.  Should the sort be increasing or
+    decreasing? Note that <code>descending=TRUE</code> reverses the meanings of
+    <code>na.last</code> and <code>blanks.last</code>.</p></td>
+    </tr>
+    <tr>
+      <th>numeric.type</th>
+      <td><p>either "decimal" (default) or "roman".  Are numeric values represented as
+    decimal numbers (<code>numeric.type="decimal"</code>) or as Roman numerals
+    (<code>numeric.type="roman"</code>)?</p></td>
+    </tr>
+    <tr>
+      <th>context</th>
+      <td><p>(class <code>document_context</code>) <br />
+Object with context of active RStudio document.</p></td>
+    </tr>
+    </table>
+
+    <h2 class="hasAnchor" id="note"><a class="anchor" href="#note"></a>Note</h2>
+
+    <p>Inspired by <a href='https://github.com/dcomtois/sortLines'>https://github.com/dcomtois/sortLines</a>.</p>
+
+  </div>
+  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
+    <h2>Contents</h2>
+    <ul class="nav nav-pills nav-stacked">
+      <li><a href="#arguments">Arguments</a></li>
+      <li><a href="#note">Note</a></li>
     </ul>
 
   </div>
-
 </div>
-
 
 
       <footer>

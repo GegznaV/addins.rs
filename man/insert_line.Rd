@@ -8,8 +8,7 @@
 \alias{rs_insert_line_sw}
 \title{Insert various lines.}
 \usage{
-rs_insert_line(symbol, start = rs_get_index_first_selected_col(),
-  end = 79)
+rs_insert_line(symbol, start = rs_get_index_first_selected_col(), end = 79)
 
 rs_insert_line_ss()
 
@@ -38,6 +37,7 @@ Use
 \code{rs_insert_line_sw()} to insert \code{~~~~~~} at the cursor position.
 }
 \seealso{
-Other 'Insert at cursor position' addins: \code{\link{insert_arrows}}
+Other 'Insert at cursor position' addins: 
+\code{\link{insert_arrows}}
 }
 \concept{'Insert at cursor position' addins}

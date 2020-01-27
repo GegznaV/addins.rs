@@ -5,12 +5,13 @@
 \alias{rs_sort_rows}
 \alias{rs_sort_rows_ascending}
 \alias{rs_sort_rows_descending}
-\title{Sort selected lines.
-
-Function sort selected lines and takes into account the order of numbers}
+\title{Sort selected lines.}
 \usage{
-rs_sort_rows(decreasing = FALSE, numeric.type = "decimal",
-  context = rs_get_context())
+rs_sort_rows(
+  decreasing = FALSE,
+  numeric.type = "decimal",
+  context = rs_get_context()
+)
 
 rs_sort_rows_ascending(context = rs_get_context())
 
@@ -29,9 +30,7 @@ rs_sort_rows_descending(context = rs_get_context())
 Object with context of active RStudio document.}
 }
 \description{
-Sort selected lines.
-
-Function sort selected lines and takes into account the order of numbers
+Functions sort selected lines. And sort numbers as numbers not alphabetically.
 }
 \note{
 Inspired by \url{https://github.com/dcomtois/sortLines}.
