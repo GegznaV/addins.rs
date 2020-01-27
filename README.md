@@ -31,10 +31,10 @@ Package `addins.rs` is an R package that provides a set of RStudio
 add-ins which are designed to be used in combination with user-defined
 RStudio keyboard shortcuts. These add-ins:
 
-1)  Insert various R operators, including `%>%`, `<<-`, `%$%`;  
-2)  Replace certain symbols (e.g., strings like `"c:\data\"` converted
+1.  Insert various R operators, including `%>%`, `<<-`, `%$%`;  
+2.  Replace certain symbols (e.g., strings like `"c:\data\"` converted
     into `"c:/data/"`. This can be useful for Windows users);  
-3)  Align code at certain symbols.
+3.  Align code at certain symbols.
 
 <!-- 
 1) **format text in R Markdown documents**: 
