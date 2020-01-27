@@ -61,39 +61,3 @@ rs_insert_infix_in <- function(context = rs_get_context()) {
     rs_insert_text(text = "%in%", context = context, spaces = TRUE)
 }
 
-# =============================================================================
-# Operators from other packages -----------------------------------------------
-# =============================================================================
-
-#' Insert \%!in\%.
-#'
-#' Call this function as an add-in to insert \code{ \%!in\% } at the cursor position.
-#'
-#' @inheritParams addin.tools::rs_get_index
-#'
-#' @note Operator does not work unless a package which contains this operator is loaded.
-#'
-#' @export
-#' @family 'Insert at cursor position' add-ins
-#' @seealso Operator \link[base]{\%in\%}.
-rs_insert_infix_not_in <- function(context = rs_get_context()) {
-    rs_insert_text(text = "%!in%", context = context, spaces = TRUE)
-}
-
-#
-#' Insert \%R\%.
-#'
-#' Call this function as an add-in to insert \code{ \%R\% } at the cursor position.
-#'
-#' @inheritParams addin.tools::rs_get_index
-#'
-#' @note Operator does not work unless package which contains this operator is loaded.
-#'
-#' @export
-#'
-#' @seealso Operator \link[rebus.base]{\%R\%} in \pkg{rebus}.
-#' @family 'Insert at cursor position' add-ins
-#'
-rs_insert_infix_R <- function(context = rs_get_context()) {
-    rs_insert_text(text = "%R%", context = context, spaces = TRUE)
-}
