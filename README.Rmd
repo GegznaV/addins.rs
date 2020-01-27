@@ -34,18 +34,18 @@ knitr::include_graphics("http://gegznav.github.io/addins.rs/logo.png")
 -->
 ***
 
-<img src="http://gegznav.github.io/addins.rs/logo.png" align="right" width="15%" height="15%"/> 
+<!-- <img src="http://gegznav.github.io/addins.rs/logo.png" align="right" width="15%" height="15%"/>  -->
    
 R package **addins.rs**  
 =========================================================================
 
-Package `addins.rs` is an R package that provides a set of RStudio addins which
+Package `addins.rs` is an R package that provides a set of RStudio add-ins which
 are designed to be used in
 combination with user-defined RStudio keyboard shortcuts. These
 add-ins:
 
-1) Insert various R operatiors, including `%>%`, `<<-`, `%$%`;
-2) Replace certain symbols (e.g., strings like `"c:\data\"` converted into `"c:/data/"`. This can be useful for Windows users);
+1) Insert various R operators, including `%>%`, `<<-`, `%$%`;  
+2) Replace certain symbols (e.g., strings like `"c:\data\"` converted into `"c:/data/"`. This can be useful for Windows users);  
 3) Align code at certain symbols.
 
 <!-- 
@@ -70,10 +70,10 @@ Install package
 
 Install development version from GitHub:
 ```{r Install package from GitHub, eval=FALSE}
-if (!require(devtools)) install.packages("devtools")
+if (!require(remotes)) install.packages("remotes")
 
-devtools::install_github("GegznaV/addin.tools")
-devtools::install_github("GegznaV/addins.rs")
+remotes::install_github("GegznaV/addin.tools")
+remotes::install_github("GegznaV/addins.rs")
 ```
 
 <!-- Recommended workflow and a few examples -->
