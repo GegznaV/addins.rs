@@ -16,9 +16,7 @@ Call this function as an add-in to enclose selected text with percent operator \
 \seealso{
 Other 'Insert at cursor position' add-ins: 
 \code{\link{insert_magrittr_operators}},
-\code{\link{rs_insert_infix_R}()},
 \code{\link{rs_insert_infix_in}()},
-\code{\link{rs_insert_infix_not_in}()},
 \code{\link{rs_insert_integer_division}()},
 \code{\link{rs_insert_matrix_multiplication}()},
 \code{\link{rs_insert_modulo}()}

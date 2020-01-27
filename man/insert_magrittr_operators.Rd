@@ -40,9 +40,7 @@ equivalent is loaded.
 
 Other 'Insert at cursor position' add-ins: 
 \code{\link{rs_enclose_with_percent}()},
-\code{\link{rs_insert_infix_R}()},
 \code{\link{rs_insert_infix_in}()},
-\code{\link{rs_insert_infix_not_in}()},
 \code{\link{rs_insert_integer_division}()},
 \code{\link{rs_insert_matrix_multiplication}()},
 \code{\link{rs_insert_modulo}()}

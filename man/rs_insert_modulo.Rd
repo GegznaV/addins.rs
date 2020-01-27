@@ -20,9 +20,7 @@ Operator does not work unless package which contains this operator is loaded.
 Other 'Insert at cursor position' add-ins: 
 \code{\link{insert_magrittr_operators}},
 \code{\link{rs_enclose_with_percent}()},
-\code{\link{rs_insert_infix_R}()},
 \code{\link{rs_insert_infix_in}()},
-\code{\link{rs_insert_infix_not_in}()},
 \code{\link{rs_insert_integer_division}()},
 \code{\link{rs_insert_matrix_multiplication}()}
 }
