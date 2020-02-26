@@ -49,12 +49,12 @@ rs_replace_path_type <- function(to = c("relative", "absolute"), start_dir = get
   rstudioapi::modifyRange(location = old_range, text = new_text, id = context$id)
 
   if (keep_selected) {
-    addin.tools:::select_correct_range(old_text, new_text, old_range, id = context$id)
+    addin.tools::select_correct_range(old_text, new_text, old_range, id = context$id)
   }
   message(
     msg,
-    "      Input: ", old_text, "\n",
-    "Relative to: ", start_dir, "\n",
-    "     Result: ", new_text, "\n"
+    "      Input:  ", old_text, "\n",
+    "Relative to:  ", start_dir, "\n",
+    "     Result:  ", new_text, "\n"
   )
 }
