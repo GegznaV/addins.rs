@@ -7,7 +7,7 @@
 #' @name path_type
 #' @export
 rs_to_absolute_path <- function() {
-  rs_replace_path_type(to = "D:/Dokumentai/R/addins.rs/absolute")
+  rs_replace_path_type(to = "absolute")
 }
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #' @rdname path_type
