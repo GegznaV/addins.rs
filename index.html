@@ -39,7 +39,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">addins.rs</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.7</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.8</span>
       </span>
     </div>
 
@@ -87,9 +87,13 @@
 <a href="#r-package-addins-rs" class="anchor"></a>R package <strong>addins.rs</strong>
 </h1></div>
 <p>Package <code>addins.rs</code> is an R package that provides a set of RStudio add-ins which are designed to be used in combination with user-defined RStudio keyboard shortcuts. These add-ins:</p>
-<p>1) Insert various R operators, including <code>%&gt;%</code>, <code>&lt;&lt;-</code>, <code>%$%</code>;<br>
-2) Replace certain symbols (e.g., strings like <code>"c:\data\"</code> converted into <code>"c:/data/"</code>. This can be useful for Windows users);<br>
-3) Align code at certain symbols.</p>
+<ol>
+<li>Insert various R operators, including <code>%&gt;%</code>, <code>&lt;&lt;-</code>, <code>%$%</code>;<br>
+</li>
+<li>Replace certain symbols (e.g., strings like <code>"c:\data\"</code> converted into <code>"c:/data/"</code>. This can be useful for Windows users);<br>
+</li>
+<li>Align code at certain symbols.</li>
+</ol>
 <!-- 
 1) **format text in R Markdown documents**: 
     - **enclose** either selected text or selected rows with special symbols and text gets inerpreted in a special way when rendered with R Markdown (e.g., converts "bold" into "\*\*bold\*\*"
@@ -98,8 +102,7 @@ that is interpreted as "**bold**").
 3)  **replace** symbols in selected
 pieces of text (e.g., convert backslashes to forward slashes which results 
 in strings like `"c:\data\"` converted into `"c:/data/"`). 
--->
-<div id="install-package" class="section level2">
+--><div id="install-package" class="section level2">
 <h2 class="hasAnchor">
 <a href="#install-package" class="anchor"></a>Install package</h2>
 <!-- Install released version from CRAN: -->
@@ -109,8 +112,8 @@ in strings like `"c:\data\"` converted into `"c:/data/"`).
 <p>Install development version from GitHub:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="cf">if</span> (<span class="op">!</span><span class="kw"><a href="https://rdrr.io/r/base/library.html">require</a></span>(remotes)) <span class="kw"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"remotes"</span>)</a>
 <a class="sourceLine" id="cb1-2" data-line-number="2"></a>
-<a class="sourceLine" id="cb1-3" data-line-number="3">remotes<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/remotes/man/install_github.html">install_github</a></span>(<span class="st">"GegznaV/addin.tools"</span>)</a>
-<a class="sourceLine" id="cb1-4" data-line-number="4">remotes<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/remotes/man/install_github.html">install_github</a></span>(<span class="st">"GegznaV/addins.rs"</span>)</a></code></pre></div>
+<a class="sourceLine" id="cb1-3" data-line-number="3">remotes<span class="op">::</span><span class="kw"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span>(<span class="st">"GegznaV/addin.tools"</span>)</a>
+<a class="sourceLine" id="cb1-4" data-line-number="4">remotes<span class="op">::</span><span class="kw"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span>(<span class="st">"GegznaV/addins.rs"</span>)</a></code></pre></div>
 <!-- Recommended workflow and a few examples -->
 <!-- ----------------------------------------------------- -->
 <!-- Get started online http://gegznav.github.io/addins.rs/articles/v1_workflow.html -->
@@ -156,9 +159,9 @@ in strings like `"c:\data\"` converted into `"c:/data/"`).
 <ul class="list-unstyled">
 <li><a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT licensed"></a></li>
 <li><a href="https://cran.r-project.org/package=addins.rs"><embed src="http://www.r-pkg.org/badges/version/addins.rs"></embed></a></li>
-<li><a href="https://github.com/GegznaV/addins.rs"><img src="https://img.shields.io/badge/GitHub-0.0.7-brightgreen.svg" alt="GitHub version"></a></li>
+<li><a href="https://github.com/GegznaV/addins.rs"><img src="https://img.shields.io/badge/GitHub-0.0.8-brightgreen.svg" alt="GitHub version"></a></li>
 <li><a href="https://travis-ci.org/GegznaV/addins.rs"><img src="https://travis-ci.org/GegznaV/addins.rs.png?branch=master" alt="Travis-CI Build Status"></a></li>
-<li><a href="/commits/master"><img src="https://img.shields.io/badge/Updated%20on-2020--01--27-yellowgreen.svg" alt="Updated-on"></a></li>
+<li><a href="/commits/master"><img src="https://img.shields.io/badge/Updated%20on-2020--02--26-yellowgreen.svg" alt="Updated-on"></a></li>
 </ul>
 </div>
 </div>
