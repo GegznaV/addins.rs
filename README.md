@@ -7,10 +7,10 @@
 licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/addins.rs)](https://cran.r-project.org/package=addins.rs)
 [![GitHub
-version](https://img.shields.io/badge/GitHub-0.0.7-brightgreen.svg)](https://github.com/GegznaV/addins.rs)
+version](https://img.shields.io/badge/GitHub-0.0.8-brightgreen.svg)](https://github.com/GegznaV/addins.rs)
 [![Travis-CI Build
 Status](https://travis-ci.org/GegznaV/addins.rs.png?branch=master)](https://travis-ci.org/GegznaV/addins.rs)
-[![Updated-on](https://img.shields.io/badge/Updated%20on-2020--01--27-yellowgreen.svg)](/commits/master)
+[![Updated-on](https://img.shields.io/badge/Updated%20on-2020--02--26-yellowgreen.svg)](/commits/master)
 <!-- [![Research software impact](http://depsy.org/api/package/cran/addins.rs/badge.svg)](http://depsy.org/package/r/addins.rs) -->
 
 <!-- [![Rdoc](http://www.rdocumentation.org/badges/version/addins.rs)](http://www.rdocumentation.org/packages/addins.rs) -->
@@ -31,10 +31,10 @@ Package `addins.rs` is an R package that provides a set of RStudio
 add-ins which are designed to be used in combination with user-defined
 RStudio keyboard shortcuts. These add-ins:
 
-1)  Insert various R operators, including `%>%`, `<<-`, `%$%`;  
-2)  Replace certain symbols (e.g., strings like `"c:\data\"` converted
+1.  Insert various R operators, including `%>%`, `<<-`, `%$%`;  
+2.  Replace certain symbols (e.g., strings like `"c:\data\"` converted
     into `"c:/data/"`. This can be useful for Windows users);  
-3)  Align code at certain symbols.
+3.  Align code at certain symbols.
 
 <!-- 
 1) **format text in R Markdown documents**: 

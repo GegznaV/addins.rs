@@ -83,6 +83,17 @@ Binding: rs_replace_slash_bd2s
 Interactive: false
 
 
+Name: Convert to absolute path
+Description: Convert path to absolute path (in comparison to working directory).
+Binding: rs_to_absolute_path
+Interactive: false
+
+Name: Convert to relative path
+Description: Convert path to path that is relative to working directory.
+Binding: rs_to_relative_path
+Interactive: false
+
+
 Name: {RS} Insert date
 Description: Insert current date (yyyy-mm-dd).
 Binding: rs_insert_date
@@ -191,5 +202,7 @@ Description: Insert sequence of symbols "=".
 Binding: rs_insert_line_ds
 Interactive: false
 
-
-
+Name: {RS} For debug RStudio context objects
+Description: addin.tools::rs_get_context()
+Binding: rs_get_context_addin
+Interactive: false
