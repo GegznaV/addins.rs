@@ -28,12 +28,12 @@ rs_replace_path_type <- function(to = c("relative", "absolute"), start_dir = get
 
   switch(to,
     relative = {
-      msg <- "Converting path to relative path. \n"
+      msg <- "\n-- Converting path to relative path. --\n"
       fun <- fs::path_rel
     },
 
     absolute = {
-      msg <- "Converting path to absolute path. \n"
+      msg <- "\n-- Converting path to absolute path. --\n"
       fun <- fs::path_abs
     },
 
