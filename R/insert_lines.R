@@ -19,8 +19,6 @@
 #' @param end (numeric) \cr
 #'        The number of column the line ends at.
 #'
-#' @inheritParams addin.tools::rs_get_index
-#'
 #' @family 'Insert at cursor position' addins
 NULL
 
