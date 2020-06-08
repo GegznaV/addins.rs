@@ -15,7 +15,9 @@ Description: A set of RStudio add-ins that are designed to be used in
              backslashes to forward slashes which results in stings like
              "c:\data\" converted into "c:/data/");
              3) align code.
-URL: https://github.com/GegznaV/addins.rs
+URL: 
+    https://GegznaV.github.io/addins.rs/,
+    https://github.com/GegznaV/addins.rs
 BugReports: https://github.com/GegznaV/addins.rs/issues
 License: MIT + file LICENSE
 LazyData: TRUE
