@@ -1,8 +1,8 @@
 Package: addins.rs
 Type: Package
 Title: RStudio Add-ins to Insert Operators and Modify Text
-Version: 0.0.8
-Date: 2020-02-26
+Version: 0.0.9
+Date: 2020-06-08
 Authors@R: c(
   person("Vilmantas", "Gegzna", email = "GegznaV@gmail.com", role = c("aut", "cre", "cph"))
   )
@@ -42,5 +42,4 @@ Imports:
     utils
 Suggests:
     knitr,
-    rmarkdown,
-    rebus
+    rmarkdown
