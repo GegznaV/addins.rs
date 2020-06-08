@@ -23,6 +23,7 @@ knitr::opts_chunk$set(
 
 <!-- [![Rdoc](http://www.rdocumentation.org/badges/version/addins.rs)](http://www.rdocumentation.org/packages/addins.rs) -->
 
+[![R build status](https://github.com/GegznaV/addins.rs/workflows/R-CMD-check/badge.svg)](https://github.com/GegznaV/addins.rs/actions)
 <!-- badges: end -->
 
 
