@@ -7,14 +7,10 @@
 licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/addins.rs)](https://cran.r-project.org/package=addins.rs)
 [![GitHub
-version](https://img.shields.io/badge/GitHub-0.0.8-brightgreen.svg)](https://github.com/GegznaV/addins.rs)
-[![Travis-CI Build
-Status](https://travis-ci.org/GegznaV/addins.rs.png?branch=master)](https://travis-ci.org/GegznaV/addins.rs)
-[![Updated-on](https://img.shields.io/badge/Updated%20on-2020--02--26-yellowgreen.svg)](/commits/master)
-<!-- [![Research software impact](http://depsy.org/api/package/cran/addins.rs/badge.svg)](http://depsy.org/package/r/addins.rs) -->
-
-<!-- [![Rdoc](http://www.rdocumentation.org/badges/version/addins.rs)](http://www.rdocumentation.org/packages/addins.rs) -->
-
+version](https://img.shields.io/badge/GitHub-0.0.9-brightgreen.svg)](https://github.com/GegznaV/addins.rs)
+[![Updated-on](https://img.shields.io/badge/Updated%20on-2020--06--08-yellowgreen.svg)](/commits/master)
+[![R build
+status](https://github.com/GegznaV/addins.rs/workflows/R-CMD-check/badge.svg)](https://github.com/GegznaV/addins.rs/actions)
 <!-- badges: end -->
 
 <!--

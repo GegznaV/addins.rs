@@ -7,3 +7,4 @@
 #     cat("\nGoodbye at ", date(), "\n")
 # }
 
+options(repos = structure(c(CRAN = "https://cran.rstudio.com/")))
