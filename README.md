@@ -3,14 +3,14 @@
 
 <!-- badges: start -->
 
-[![MIT
-licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/addins.rs)](https://cran.r-project.org/package=addins.rs)
 [![GitHub
 version](https://img.shields.io/badge/GitHub-0.0.9-brightgreen.svg)](https://github.com/GegznaV/addins.rs)
-[![Updated-on](https://img.shields.io/badge/Updated%20on-2020--06--08-yellowgreen.svg)](/commits/master)
 [![R build
 status](https://github.com/GegznaV/addins.rs/workflows/R-CMD-check/badge.svg)](https://github.com/GegznaV/addins.rs/actions)
+[![Updated-on](https://img.shields.io/badge/Updated%20on-2020--08--12-yellowgreen.svg)](/commits/master)
+[![MIT
+licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 <!-- badges: end -->
 
 <!--
