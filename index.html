@@ -86,7 +86,7 @@
 </h1></div>
 <p>Package <code>addins.rs</code> is an R package that provides a set of RStudio add-ins which are designed to be used in combination with user-defined RStudio keyboard shortcuts. These add-ins:</p>
 <ol>
-<li>Insert various R operators, including <code>%&gt;%</code>, <code>&lt;&lt;-</code>, <code>%$%</code>;<br>
+<li>Insert various R operators, including <code>%&gt;%</code>, <code><a href="https://rdrr.io/r/base/assignOps.html">&lt;&lt;-</a></code>, <code>%$%</code>;<br>
 </li>
 <li>Replace certain symbols (e.g., strings like <code>"c:\data\"</code> converted into <code>"c:/data/"</code>. This can be useful for Windows users);<br>
 </li>
@@ -108,10 +108,12 @@ in strings like `"c:\data\"` converted into `"c:/data/"`).
 <!-- install.packages("addins.rs") -->
 <!-- ``` -->
 <p>Install development version from GitHub:</p>
-<div class="sourceCode" id="cb1"><pre class="r"><span class="kw">if</span> (!<span class="fu"><a href="https://rdrr.io/r/base/library.html">require</a></span>(<span class="no">remotes</span>)) <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"remotes"</span>)
+<div class="sourceCode" id="cb1"><pre class="downlit">
+<span class="co">if</span> (<span class="op">!</span><span class="fu"><a href="https://rdrr.io/r/base/library.html">require</a></span>(<span class="kw"><a href="https://remotes.r-lib.org">remotes</a></span>)) <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"remotes"</span>)
 
-<span class="kw pkg">remotes</span><span class="kw ns">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span>(<span class="st">"GegznaV/addin.tools"</span>)
-<span class="kw pkg">remotes</span><span class="kw ns">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span>(<span class="st">"GegznaV/addins.rs"</span>)</pre></div>
+<span class="kw">remotes</span>::<span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span>(<span class="st">"GegznaV/addin.tools"</span>)
+<span class="kw">remotes</span>::<span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span>(<span class="st">"GegznaV/addins.rs"</span>)
+</pre></div>
 <!-- Recommended workflow and a few examples -->
 <!-- ----------------------------------------------------- -->
 <!-- Get started online http://gegznav.github.io/addins.rs/articles/v1_workflow.html -->
@@ -158,7 +160,7 @@ in strings like `"c:\data\"` converted into `"c:/data/"`).
 <li><a href="https://cran.r-project.org/package=addins.rs"><img src="http://www.r-pkg.org/badges/version/addins.rs" alt="CRAN_Status_Badge"></a></li>
 <li><a href="https://github.com/GegznaV/addins.rs"><img src="https://img.shields.io/badge/GitHub-0.0.9-brightgreen.svg" alt="GitHub version"></a></li>
 <li><a href="https://github.com/GegznaV/addins.rs/actions"><img src="https://github.com/GegznaV/addins.rs/workflows/R-CMD-check/badge.svg" alt="R build status"></a></li>
-<li><a href="/commits/master"><img src="https://img.shields.io/badge/Updated%20on-2020--08--16-yellowgreen.svg" alt="Updated-on"></a></li>
+<li><a href="/commits/master"><img src="https://img.shields.io/badge/Updated%20on-2020--09--14-yellowgreen.svg" alt="Updated-on"></a></li>
 <li><a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT licensed"></a></li>
 </ul>
 </div>
@@ -171,7 +173,7 @@ in strings like `"c:\data\"` converted into `"c:/data/"`).
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>
