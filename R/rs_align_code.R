@@ -106,7 +106,7 @@ rs_align_code <- function(at_symbol, context = rs_get_context(),
           # (indices inside the selection)
           rs_get_selection_text("all", context = context) %>%
             stringr::str_split("\n") %>%
-            .[[1]] %>%
+            unlist() %>%
             stringr::str_locate(pattern = at_symbol) %>%
             as.data.frame()
         ) %>%
