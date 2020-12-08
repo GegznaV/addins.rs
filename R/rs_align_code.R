@@ -129,6 +129,14 @@ rs_align_code <- function(at_symbol, context = rs_get_context(),
 
   rez <-
     inds_of_interest %>%
+    dplyr::filter(!is.na(start))
+
+  if (nrow(rez) == 0) {
+    return()
+  }
+
+  rez <-
+    rez %>%
     dplyr::mutate(
       shift  = max(start, na.rm = TRUE) - start, # shift = n spaces to insert
       spaces = make_spaces(shift) # spaces that create alignment
@@ -136,6 +144,10 @@ rs_align_code <- function(at_symbol, context = rs_get_context(),
     dplyr::filter(shift > 0) %>% # only rows which should be modified
     dplyr::rename(col = start) %>%
     dplyr::select(row, col, spaces)
+
+  if (nrow(rez) == 0) {
+    return()
+  }
 
   # Put indices into correct format
   locations <- split(as.matrix(rez[, c("row", "col")]), rez$row)
