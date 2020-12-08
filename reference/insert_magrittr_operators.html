@@ -41,7 +41,7 @@
 
 <meta property="og:title" content="Insert magrittr operators. — insert_magrittr_operators" />
 <meta property="og:description" content="These add-ins insert operators %&amp;gt;%, %&amp;lt;&amp;gt;%,
- %$%,
+%$%,
 and %T&amp;gt;% at the cursor position.
 The operators are defined in package magrittr." />
 
@@ -75,7 +75,7 @@ The operators are defined in package magrittr." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">addins.rs</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.9</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.10</span>
       </span>
     </div>
 
@@ -118,18 +118,18 @@ The operators are defined in package magrittr." />
 
     <div class="ref-description">
     <p>These add-ins insert operators <code>%&gt;%</code>, <code>%&lt;&gt;%</code>,
- <code>%$%</code>,
+<code>%$%</code>,
 and <code>%T&gt;%</code> at the cursor position.
 The operators are defined in package <span class="pkg">magrittr</span>.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>rs_insert_pipe</span>(context = <span class='fu'>rs_get_context</span>())
+    <pre class="usage"><span class='fu'>rs_insert_pipe</span><span class='op'>(</span>context <span class='op'>=</span> <span class='fu'>rs_get_context</span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span>
 
-<span class='fu'>rs_insert_update_pipe</span>(context = <span class='fu'>rs_get_context</span>())
+<span class='fu'>rs_insert_update_pipe</span><span class='op'>(</span>context <span class='op'>=</span> <span class='fu'>rs_get_context</span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span>
 
-<span class='fu'>rs_insert_exposition_pipe</span>(context = <span class='fu'>rs_get_context</span>())
+<span class='fu'>rs_insert_exposition_pipe</span><span class='op'>(</span>context <span class='op'>=</span> <span class='fu'>rs_get_context</span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span>
 
-<span class='fu'>rs_insert_tee_pipe</span>(context = <span class='fu'>rs_get_context</span>())</pre>
+<span class='fu'>rs_insert_tee_pipe</span><span class='op'>(</span>context <span class='op'>=</span> <span class='fu'>rs_get_context</span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -151,7 +151,7 @@ equivalent is loaded.</p>
 <ul>
 <li><p>Forward pipeline operator %&gt;%</p></li>
 <li><p>Compound assignment pipe operator %&lt;&gt;%</p></li>
-<li><p>Exposition pipe operator <a href='https://rdrr.io/pkg/magrittr/man/exposition.html'>%$%</a> and operator <a href='https://rdrr.io/r/base/Extract.html'>$</a></p></li>
+<li><p>Exposition pipe operator %$% and operator <a href='https://rdrr.io/r/base/Extract.html'>$</a></p></li>
 <li><p>Tee operator %T&gt;%</p></li>
 </ul>
 

@@ -40,7 +40,8 @@
 
 
 <meta property="og:title" content="Align code at certain symbols. — rs_align_code_at_pattern" />
-<meta property="og:description" content="In selected lines, align code at first occurance of certain symbol in each row." />
+<meta property="og:description" content="In selected lines, align code at first occurrence of certain symbol in each
+row." />
 
 
 
@@ -72,7 +73,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">addins.rs</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.9</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.10</span>
       </span>
     </div>
 
@@ -114,22 +115,27 @@
     </div>
 
     <div class="ref-description">
-    <p>In selected lines, align code at first occurance of certain symbol in each row.</p>
+    <p>In selected lines, align code at first occurrence of certain symbol in each
+row.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>rs_align_code_at_pattern</span>(context = <span class='fu'>rs_get_context</span>())
+    <pre class="usage"><span class='fu'>rs_align_code_at_pattern</span><span class='op'>(</span>context <span class='op'>=</span> <span class='fu'>rs_get_context</span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span>
 
-<span class='fu'>rs_align_code</span>(<span class='kw'>at_symbol</span>, context = <span class='fu'>rs_get_context</span>())
+<span class='fu'>rs_align_code</span><span class='op'>(</span>
+  <span class='va'>at_symbol</span>,
+  context <span class='op'>=</span> <span class='fu'>rs_get_context</span><span class='op'>(</span><span class='op'>)</span>,
+  algorithm <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"selection only"</span>, <span class='st'>"rows in selection"</span><span class='op'>)</span>
+<span class='op'>)</span>
 
-<span class='fu'>rs_align_code_at_equal</span>(context = <span class='fu'>rs_get_context</span>())
+<span class='fu'>rs_align_code_at_equal</span><span class='op'>(</span>context <span class='op'>=</span> <span class='fu'>rs_get_context</span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span>
 
-<span class='fu'>rs_align_code_at_arrow</span>(context = <span class='fu'>rs_get_context</span>())
+<span class='fu'>rs_align_code_at_arrow</span><span class='op'>(</span>context <span class='op'>=</span> <span class='fu'>rs_get_context</span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span>
 
-<span class='fu'>rs_align_code_at_pipe_operator</span>(context = <span class='fu'>rs_get_context</span>())
+<span class='fu'>rs_align_code_at_pipe_operator</span><span class='op'>(</span>context <span class='op'>=</span> <span class='fu'>rs_get_context</span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span>
 
-<span class='fu'>rs_align_code_at_hash</span>(context = <span class='fu'>rs_get_context</span>())
+<span class='fu'>rs_align_code_at_hash</span><span class='op'>(</span>context <span class='op'>=</span> <span class='fu'>rs_get_context</span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span>
 
-<span class='fu'>rs_align_code_at_vertical_bar</span>(context = <span class='fu'>rs_get_context</span>())</pre>
+<span class='fu'>rs_align_code_at_vertical_bar</span><span class='op'>(</span>context <span class='op'>=</span> <span class='fu'>rs_get_context</span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -144,6 +150,11 @@ Object with context of active RStudio document.</p></td>
       <td><p>(character) <br />
 A regular expression that represents symbol treated as reference for
 code alignment.</p></td>
+    </tr>
+    <tr>
+      <th>algorithm</th>
+      <td><p>(<code>character</code>) <br />
+One of <code>"selection only"</code> and <code>"rows in selection"</code>.</p></td>
     </tr>
     </table>
 
