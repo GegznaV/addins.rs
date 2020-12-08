@@ -32,9 +32,9 @@ at the cursor position and ends at symbol (column) 79. (It is recommended that
 the line of code would not be longer than 80 symbols.)
 
 Use
-\code{rs_insert_line_ss()} to insert \code{------};\cr
-\code{rs_insert_line_ds()} to insert \code{======};\cr
-\code{rs_insert_line_sw()} to insert \code{~~~~~~} at the cursor position.
+\code{rs_insert_line_ss()} to insert \verb{------};\cr
+\code{rs_insert_line_ds()} to insert \verb{======};\cr
+\code{rs_insert_line_sw()} to insert \verb{~~~~~~} at the cursor position.
 }
 \seealso{
 Other 'Insert at cursor position' addins: 

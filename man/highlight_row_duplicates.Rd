@@ -21,10 +21,10 @@ Object with context of active RStudio document.}
 Functions that highlight duplicates of selected lines:
 \itemize{
 \item{rs_highlight_first_row_duplicates() duplicates of the first selected
-     row (the first row gets deselected);}
+row (the first row gets deselected);}
 \item{rs_highlight_row_duplicates() duplicates of any selected row
-     (except the first occurrence);}
+(except the first occurrence);}
 \item{rs_highlight_row_duplicates_all() duplicates of any selected row
-     (including the first occurrence).}
+(including the first occurrence).}
 }
 }

@@ -11,7 +11,7 @@ rs_insert_modulo(context = rs_get_context())
 Object with context of active RStudio document.}
 }
 \description{
-Call this function as an add-in to insert \code{ \%\% } at the cursor position.
+Call this function as an add-in to insert \code{\%\%} at the cursor position.
 }
 \note{
 Operator does not work unless package which contains this operator is loaded.

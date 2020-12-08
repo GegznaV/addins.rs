@@ -11,10 +11,10 @@ rs_insert_infix_in(context = rs_get_context())
 Object with context of active RStudio document.}
 }
 \description{
-Call this function as an add-in to insert \code{ \%in\% } at the cursor position.
+Call this function as an add-in to insert \code{\%in\%} at the cursor position.
 }
 \seealso{
-Operator \link[base]{\%in\%}.
+Operator \link[base:match]{\%in\%}.
 
 Other 'Insert at cursor position' add-ins: 
 \code{\link{insert_magrittr_operators}},

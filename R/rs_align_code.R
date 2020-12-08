@@ -42,7 +42,7 @@
 #' row.
 #'
 #' @note
-#' Inspired by \url{https://github.com/seasmith/AlignAssign}.
+#' Inspired by <https://github.com/seasmith/AlignAssign>.
 #'
 #' @name align_code
 #'
@@ -50,10 +50,10 @@
 #'        A regular expression that represents symbol treated as reference for
 #'        code alignment.
 #'
-#' @param context (class \code{document_context}) \cr
+#' @param context (class `document_context`) \cr
 #'        Object with context of active RStudio document.
 #'
-#' @param algorithm (\code{character}) \cr
+#' @param algorithm (`character`) \cr
 #'        One of `"selection only"` and `"rows in selection"`.
 
 NULL

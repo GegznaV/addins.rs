@@ -21,9 +21,9 @@ rs_insert_tee_pipe(context = rs_get_context())
 Object with context of active RStudio document.}
 }
 \description{
-These add-ins insert operators \code{\%>\%}, \code{\%<>\%},
- \code{\%$\%},
-and \code{\%T>\%} at the cursor position.
+These add-ins insert operators \verb{\%>\%}, \verb{\%<>\%},
+\verb{\%$\%},
+and \verb{\%T>\%} at the cursor position.
 The operators are defined in package \pkg{magrittr}.
 }
 \note{
@@ -32,10 +32,10 @@ equivalent is loaded.
 }
 \seealso{
 \itemize{
-   \item Forward pipeline operator \link[magrittr]{\%>\%}
-   \item Compound assignment pipe operator \link[magrittr]{\%<>\%}
-   \item Exposition pipe operator \link[magrittr]{\%$\%} and operator \link[base]{$}
-   \item Tee operator \link[magrittr]{\%T>\%}
+\item Forward pipeline operator \link[magrittr:pipe]{\%>\%}
+\item Compound assignment pipe operator \link[magrittr:compound]{\%<>\%}
+\item Exposition pipe operator \link[magrittr:exposition]{\%$\%} and operator \link[base:Extract]{$}
+\item Tee operator \link[magrittr:tee]{\%T>\%}
 }
 
 Other 'Insert at cursor position' add-ins: 

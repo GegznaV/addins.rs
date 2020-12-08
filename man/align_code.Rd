@@ -38,7 +38,7 @@ A regular expression that represents symbol treated as reference for
 code alignment.}
 
 \item{algorithm}{(\code{character}) \cr
-One of `"selection only"` and `"rows in selection"`.}
+One of \code{"selection only"} and \code{"rows in selection"}.}
 }
 \description{
 In selected lines, align code at first occurrence of certain symbol in each

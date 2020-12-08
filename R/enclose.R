@@ -1,6 +1,6 @@
-#' Enclose with \%\%.
+#' Enclose with %%.
 #'
-#' Call this function as an add-in to enclose selected text with percent operator \code{ \% }.
+#' Call this function as an add-in to enclose selected text with percent operator `%`.
 #'
 #' @inheritParams addin.tools::rs_get_index
 #'
