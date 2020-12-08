@@ -92,40 +92,40 @@ rs_align_code <- function(at_symbol, context = rs_get_context(),
                           algorithm = c("selection only", "rows in selection")) {
   algorithm <- match.arg(algorithm)
 
-switch(
-  algorithm,
-  "selection only" = {
-    inds_of_interest <-
-      dplyr::bind_cols(
-        # Get selection indices: separate set of indices per row
-        rs_get_selection_range("all", context = context) %>%
-          purrr::map_dfr(unlist) %>%
-          one_line_per_row(),
+  switch(
+    algorithm,
+    "selection only" = {
+      inds_of_interest <-
+        dplyr::bind_cols(
+          # Get selection indices: separate set of indices per row
+          rs_get_selection_range("all", context = context) %>%
+            purrr::map_dfr(unlist) %>%
+            one_line_per_row(),
 
-        # Get indices of selected text
-        # (indices inside the selection)
-        rs_get_selection_text("all", context = context) %>%
-          stringr::str_split("\n") %>%
-          .[[1]] %>%
+          # Get indices of selected text
+          # (indices inside the selection)
+          rs_get_selection_text("all", context = context) %>%
+            stringr::str_split("\n") %>%
+            .[[1]] %>%
+            stringr::str_locate(pattern = at_symbol) %>%
+            as.data.frame()
+        ) %>%
+        dplyr::transmute(
+          row = start.row,
+          start = start + start.column - 1,
+          end = end + start.column - 1
+        )
+    },
+    "rows in selection" <- {
+      inds_of_interest <- {
+        text <- rs_get_selected_rows(context = context)
+        text %>%
           stringr::str_locate(pattern = at_symbol) %>%
-          as.data.frame()
-      ) %>%
-      dplyr::transmute(
-        row = start.row,
-        start = start + start.column - 1,
-        end = end + start.column - 1
-      )
-  },
-  "rows in selection" <- {
-    inds_of_interest <- {
-      text <- rs_get_selected_rows(context = context)
-      text %>%
-        stringr::str_locate(pattern = at_symbol) %>%
-        as.data.frame() %>%
-        dplyr::mutate(row = attr(text, "row_numbers"))
+          as.data.frame() %>%
+          dplyr::mutate(row = attr(text, "row_numbers"))
+      }
     }
-  }
-)
+  )
 
   rez <-
     inds_of_interest %>%
@@ -149,7 +149,7 @@ switch(
 #' @rdname align_code
 #' @export
 rs_align_code_at_equal <- function(context = rs_get_context()) {
-    rs_align_code(stringr::fixed("="), context = context)
+  rs_align_code(stringr::fixed("="), context = context)
 }
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #' @rdname align_code
