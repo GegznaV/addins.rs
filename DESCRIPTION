@@ -45,3 +45,4 @@ Imports:
 Suggests:
     knitr,
     rmarkdown
+Roxygen: list(markdown = TRUE)
