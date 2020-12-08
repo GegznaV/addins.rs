@@ -9,7 +9,7 @@
 #'
 #' @export
 #' @note
-#' Inspired by \url{https://github.com/dcomtois/sortLines}.
+#' Inspired by <https://github.com/dcomtois/sortLines>.
 #'
 rs_sort_rows <- function(decreasing = FALSE, numeric.type = "decimal",
     context = rs_get_context()) {

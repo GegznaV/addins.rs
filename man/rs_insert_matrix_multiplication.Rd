@@ -11,10 +11,10 @@ rs_insert_matrix_multiplication(context = rs_get_context())
 Object with context of active RStudio document.}
 }
 \description{
-Call this function as an add-in to insert \code{ \%*\% } at the cursor position.
+Call this function as an add-in to insert \code{\%*\%} at the cursor position.
 }
 \seealso{
-Operator \link[base]{\%*\%} for matrix multiplication.
+Operator \link[base:matmult]{\%*\%} for matrix multiplication.
 
 Other 'Insert at cursor position' add-ins: 
 \code{\link{insert_magrittr_operators}},

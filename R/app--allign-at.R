@@ -20,16 +20,20 @@ rs_align_code_at_pattern <- function(context = rs_get_context()) {
 
   ui <- miniPage(
     gadgetTitleBar("Align code at"),
+    tags$style("#pattern {font-family: monospace; font-size:14px; font-weight:bold;}"),
     miniContentPanel(
-      stableColumnLayout(textInput("pattern", "Pattern:")),
+      stableColumnLayout(h5("Pattern:")),
+      stableColumnLayout(
+        tags$textarea(id = "pattern", rows =  1, cols = 30, "",
+          autofocus = "autofocus")),
+
+        # textInput("pattern2", "Pattern:")),
       stableColumnLayout(checkboxInput("regex", "Regex", value = FALSE))
     )
   )
 
-  server <- function(input, output, session) {
-
-    observeEvent(input$done, {
-      pattern <- input$pattern # FIXME: empty stings cause issues
+  on_done <- function(input) {
+      pattern <- input$pattern
       if (pattern == "") {
         stopApp()
         return()
@@ -38,7 +42,11 @@ rs_align_code_at_pattern <- function(context = rs_get_context()) {
       patt_type <- if (input$regex) {stringr::regex} else {stringr::fixed}
       rs_align_code(at_symbol = patt_type(pattern), context = context)
       stopApp()
-    })
+    }
+
+  server <- function(input, output, session) {
+
+    observeEvent(input$done, on_done(input))
   }
   viewer <- dialogViewer("Align code at selected pattern", width = 200, height = 100)
 

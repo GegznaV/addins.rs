@@ -11,10 +11,10 @@ rs_insert_integer_division(context = rs_get_context())
 Object with context of active RStudio document.}
 }
 \description{
-Call this function as an add-in to insert \code{ \%/\% } at the cursor position.
+Call this function as an add-in to insert \verb{\%/\% } at the cursor position.
 }
 \seealso{
-Operator \link[base]{\%/\%}.
+Operator \link[base:Arithmetic]{\%/\%}.
 
 Other 'Insert at cursor position' add-ins: 
 \code{\link{insert_magrittr_operators}},

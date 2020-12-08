@@ -1,16 +1,24 @@
 on:
   push:
     branches:
-    - master
-    - devel
+      - release
+      - master
+      - develop
 
-name: pkgdown
+  pull_request:
+    branches:
+      - release
+      - master
+      - develop
+
+name: Test coverage
 
 jobs:
-  pkgdown:
+  test-coverage:
     runs-on: macOS-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      R_REMOTES_NO_ERRORS_FROM_WARNINGS: true
     steps:
       - uses: actions/checkout@v2
 
@@ -35,28 +43,17 @@ jobs:
 
       - name: Install dependencies
         run: |
-          install.packages("remotes")
-          install.packages("rmarkdown")
-          install.packages("ps")
+          install.packages(c("remotes", "devtools"))
           remotes::install_deps(dependencies = TRUE)
-          install.packages("pkgdown")
+          remotes::install_cran("covr")
         shell: Rscript {0}
 
-      - name: Install package
-        run: R CMD INSTALL .
-
-      - name: Render README
-        run: Rscript -e 'rmarkdown::render("README.Rmd")'
-
-      # - name: Commit results
-      #   run: |
-      #     git config --local user.email "actions@github.com"
-      #     git config --local user.name "GitHub Actions"
-      #     git commit README.md -m 'Re-build README.Rmd before pkgdown' || echo "No changes to commit"
-      #     git push origin || echo "No changes to commit"
-
-      - name: Deploy package
+      - name: Roxygenize
         run: |
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Actions"
-          Rscript -e 'pkgdown::deploy_to_branch(new_process = FALSE)'
+          devtools::document(roclets = c('rd', 'collate', 'namespace'))
+        shell: Rscript {0}
+
+      - name: Test coverage
+        run: covr::codecov()
+        shell: Rscript {0}
+

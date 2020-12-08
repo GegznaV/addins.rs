@@ -11,7 +11,7 @@ rs_enclose_with_percent(context = rs_get_context())
 Object with context of active RStudio document.}
 }
 \description{
-Call this function as an add-in to enclose selected text with percent operator \code{ \% }.
+Call this function as an add-in to enclose selected text with percent operator \verb{\%}.
 }
 \seealso{
 Other 'Insert at cursor position' add-ins: 

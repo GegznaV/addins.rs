@@ -8,9 +8,9 @@
 #' the line of code would not be longer than 80 symbols.)
 #'
 #' Use
-#' \code{rs_insert_line_ss()} to insert \code{------};\cr
-#' \code{rs_insert_line_ds()} to insert \code{======};\cr
-#' \code{rs_insert_line_sw()} to insert \code{~~~~~~} at the cursor position.
+#' `rs_insert_line_ss()` to insert `------`;\cr
+#' `rs_insert_line_ds()` to insert `======`;\cr
+#' `rs_insert_line_sw()` to insert `~~~~~~` at the cursor position.
 #'
 #' @param symbol (character) \cr
 #'        The symbol that will be repeated to create a line.

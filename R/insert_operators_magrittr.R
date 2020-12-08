@@ -1,13 +1,13 @@
 # From `magrittr` ---------------------------------------------------------
-# Insert \%>\%, \%<>\%, \%$\% and \%T>\%
+# Insert %>%, %<>%, %$% and %T>%
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #' @name insert_magrittr_operators
 #'
 #' @title Insert magrittr operators.
 #'
-#' @description These add-ins insert operators \code{\%>\%}, \code{\%<>\%},
-#'  \code{\%$\%},
-#' and \code{\%T>\%} at the cursor position.
+#' @description These add-ins insert operators `%>%`, `%<>%`,
+#'  `%$%`,
+#' and `%T>%` at the cursor position.
 #' The operators are defined in package \pkg{magrittr}.
 #'
 #' @inheritParams addin.tools::rs_get_index
@@ -16,10 +16,10 @@
 #' equivalent is loaded.
 #' @seealso
 #' \itemize{
-#'    \item Forward pipeline operator \link[magrittr]{\%>\%}
-#'    \item Compound assignment pipe operator \link[magrittr]{\%<>\%}
-#'    \item Exposition pipe operator \link[magrittr]{\%$\%} and operator \link[base]{$}
-#'    \item Tee operator \link[magrittr]{\%T>\%}
+#'    \item Forward pipeline operator [%>%][magrittr::%>%]
+#'    \item Compound assignment pipe operator [%<>%][magrittr::%<>%]
+#'    \item Exposition pipe operator [%$%][magrittr::%$%] and operator [$][base::$]
+#'    \item Tee operator [%T>%][magrittr::%T>%]
 #' }
 #'
 #' @family 'Insert at cursor position' add-ins

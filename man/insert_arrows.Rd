@@ -21,11 +21,11 @@ rs_insert_arrow_lr2(context = rs_get_context())
 Object with context of active RStudio document.}
 }
 \description{
-RStudio add-in to insert either \code{->}, \code{->>},
-\code{<-} or \code{<<-} at the cursor position.
+RStudio add-in to insert either \verb{->}, \verb{->>},
+\verb{<-} or \verb{<<-} at the cursor position.
 }
 \note{
-use hotkeys combination \code{ALT} + \code{-} to insert \code{<-} in RStudio.
+use hotkeys combination \kbd{ALT} + \kbd{-} to insert \verb{<-} in RStudio.
 }
 \examples{
 \dontrun{
@@ -47,7 +47,7 @@ rs_insert_arrow_lr2()
 }
 }
 \seealso{
-Assignment operators \link[base]{assignOps}.\cr
+Assignment operators \link[base:assignOps]{assignOps}.\cr
 
 Other 'Insert at cursor position' addins: 
 \code{\link{insert_line}}

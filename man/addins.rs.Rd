@@ -5,16 +5,16 @@
 \alias{addins.rs}
 \title{A Set of RStudio Add-ins.}
 \description{
-\code{addins.rs} provides a set of RStudio add-ins that
+Package \strong{\code{addins.rs}} provides a set of RStudio add-ins that
 are designed to be used in combination with user-defined RStudio keyboard
 shortcuts. These add-ins either insert text at the cursor position (e.g. insert
-operators \code{\%>\%}, \code{<<-}, \code{\%$\%}, etc.) or replace symbols
+operators \verb{\%>\%}, \verb{<<-}, \verb{\%$\%}, etc.) or replace symbols
 in selected pieces of text, e.g., convert back-slashes to forward-slashes.\cr
 
-\code{License:} MIT   \cr
-\code{URL:} \url{https://github.com/GegznaV/addins.rs} \cr
-\code{Bug reports and suggestions:} \url{https://github.com/GegznaV/addins.rs/issues} \cr
-\code{Author:} Vilmantas Gegzna
+\verb{License:} MIT   \cr
+\verb{URL:} \url{https://github.com/GegznaV/addins.rs} \cr
+\verb{Bug reports and suggestions:} \url{https://github.com/GegznaV/addins.rs/issues} \cr
+\verb{Author:} Vilmantas Gegzna
 }
 \seealso{
 Use the links below to learn more about RStudio add-ins

@@ -13,7 +13,11 @@
 \usage{
 rs_align_code_at_pattern(context = rs_get_context())
 
-rs_align_code(at_symbol, context = rs_get_context())
+rs_align_code(
+  at_symbol,
+  context = rs_get_context(),
+  algorithm = c("selection only", "rows in selection")
+)
 
 rs_align_code_at_equal(context = rs_get_context())
 
@@ -32,9 +36,13 @@ Object with context of active RStudio document.}
 \item{at_symbol}{(character) \cr
 A regular expression that represents symbol treated as reference for
 code alignment.}
+
+\item{algorithm}{(\code{character}) \cr
+One of \code{"selection only"} and \code{"rows in selection"}.}
 }
 \description{
-In selected lines, align code at first occurance of certain symbol in each row.
+In selected lines, align code at first occurrence of certain symbol in each
+row.
 }
 \note{
 Inspired by \url{https://github.com/seasmith/AlignAssign}.
