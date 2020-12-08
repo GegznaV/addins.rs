@@ -32,10 +32,8 @@ rs_align_code_at_pattern <- function(context = rs_get_context()) {
     )
   )
 
-  server <- function(input, output, session) {
-
-    observeEvent(input$done, {
-      pattern <- input$pattern # FIXME: empty stings cause issues
+  on_done <- function(input) {
+      pattern <- input$pattern
       if (pattern == "") {
         stopApp()
         return()
@@ -44,7 +42,11 @@ rs_align_code_at_pattern <- function(context = rs_get_context()) {
       patt_type <- if (input$regex) {stringr::regex} else {stringr::fixed}
       rs_align_code(at_symbol = patt_type(pattern), context = context)
       stopApp()
-    })
+    }
+
+  server <- function(input, output, session) {
+
+    observeEvent(input$done, on_done(input))
   }
   viewer <- dialogViewer("Align code at selected pattern", width = 200, height = 100)
 
