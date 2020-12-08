@@ -1,14 +1,13 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-
 <!-- badges: start -->
 
 [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/addins.rs)](https://cran.r-project.org/package=addins.rs)
 [![GitHub
-version](https://img.shields.io/badge/GitHub-0.0.9-brightgreen.svg)](https://github.com/GegznaV/addins.rs)
+version](https://img.shields.io/badge/GitHub-0.0.10-brightgreen.svg)](https://github.com/GegznaV/addins.rs)
 [![R build
 status](https://github.com/GegznaV/addins.rs/workflows/R-CMD-check/badge.svg)](https://github.com/GegznaV/addins.rs/actions)
-[![Updated-on](https://img.shields.io/badge/Updated%20on-2020--08--12-yellowgreen.svg)](/commits/master)
+[![Updated-on](https://img.shields.io/badge/Updated%20on-2020--12--08-yellowgreen.svg)](/commits/master)
 [![MIT
 licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 <!-- badges: end -->
@@ -17,7 +16,7 @@ licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource
 
 -->
 
------
+------------------------------------------------------------------------
 
 <!-- <img src="http://gegznav.github.io/addins.rs/logo.png" align="right" width="15%" height="15%"/>  -->
 
@@ -45,11 +44,8 @@ in strings like `"c:\data\"` converted into `"c:/data/"`).
 ## Install package
 
 <!-- Install released version from CRAN: -->
-
 <!-- ```{r Install package from CRAN, eval=FALSE} -->
-
 <!-- install.packages("addins.rs") -->
-
 <!-- ``` -->
 
 Install development version from GitHub:
@@ -62,21 +58,14 @@ remotes::install_github("GegznaV/addins.rs")
 ```
 
 <!-- Recommended workflow and a few examples -->
-
 <!-- ----------------------------------------------------- -->
-
 <!-- Get started online http://gegznav.github.io/addins.rs/articles/v1_workflow.html -->
-
 <!-- And offline: -->
-
 <!-- ```{r, eval=FALSE} -->
-
 <!-- vignette("v1_workflow", package = "addins.rs") -->
-
 <!-- ``` -->
-
 <!-- browseVignettes("addins.rs") -->
 
------
+------------------------------------------------------------------------
 
 More information at <http://gegznav.github.io/addins.rs/>
