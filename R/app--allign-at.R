@@ -21,7 +21,12 @@ rs_align_code_at_pattern <- function(context = rs_get_context()) {
   ui <- miniPage(
     gadgetTitleBar("Align code at"),
     miniContentPanel(
-      stableColumnLayout(textInput("pattern", "Pattern:")),
+      stableColumnLayout(h5("Pattern:")),
+      stableColumnLayout(
+        tags$textarea(id = "pattern", rows =  1, cols = 20, "",
+          autofocus = "autofocus")),
+
+        # textInput("pattern2", "Pattern:")),
       stableColumnLayout(checkboxInput("regex", "Regex", value = FALSE))
     )
   )
