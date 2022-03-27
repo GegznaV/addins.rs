@@ -25,7 +25,8 @@ NULL
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #' @name insert_line
 #' @export
-rs_insert_line <- function(symbol, start = rs_get_index_first_selected_col(), end = 79) {
+rs_insert_line <- function(symbol, start = rs_get_index_first_selected_col(),
+                           end = getOption("addins.rs.line_end", 79)) {
     rs_insert_symbol_seq(symbol, start[1], end)
 }
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
