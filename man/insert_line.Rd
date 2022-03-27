@@ -32,8 +32,8 @@ The number of column the line ends at.}
 }
 \description{
 These functions insert sequence of symbols (the line) which by default starts
-at the cursor position and ends at symbol (column) 79. (It is recommended that
-the line of code would not be longer than 80 symbols.)
+at the cursor position and ends at symbol (column) 79. (It is recommended
+that the line of code would not be longer than 80 symbols.)
 
 Use
 \code{rs_insert_line_ss()} to insert \verb{------};\cr
