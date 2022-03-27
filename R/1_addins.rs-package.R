@@ -38,3 +38,9 @@
 
 
 utils::globalVariables(c("start", "shift", "spaces"))
+
+.onLoad <- function(libname, pkgname) {
+  options(
+    addins.rs.line_end = 79
+  )
+}
