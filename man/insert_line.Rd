@@ -8,7 +8,11 @@
 \alias{rs_insert_line_sw}
 \title{Insert various lines.}
 \usage{
-rs_insert_line(symbol, start = rs_get_index_first_selected_col(), end = 79)
+rs_insert_line(
+  symbol,
+  start = rs_get_index_first_selected_col(),
+  end = getOption("addins.rs.line_end", 79)
+)
 
 rs_insert_line_ss()
 
