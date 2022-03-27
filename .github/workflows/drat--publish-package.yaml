@@ -1,9 +1,8 @@
 on:
   push:
-    branches:
-      - master
+    branches: [master, main]
 
-name: Publish package
+name: Publish package (drat)
 
 jobs:
   drat:
@@ -18,12 +17,12 @@ jobs:
           - {os: windows-latest, r: 'release'}
           - {os: windows-latest, r: 'oldrel'}
           - {os: macOS-latest,   r: 'release'}
-          - {os: macOS-latest,   r: 'oldrel'}
+          # - {os: macOS-latest,   r: 'oldrel'}
           # - {os: windows-latest, r: 'devel'}
           # - {os: macOS-latest,   r: 'devel'}
 
     env:
-      R_REMOTES_NO_ERRORS_FROM_WARNINGS: true
+      GITHUB_PAT:  ${{ secrets.GITHUB_TOKEN }}
       SOURCE_REPO: ${{ github.repository }}
       DEST_REPO:   mokymai/download
       TMP_DIR:     tmp_dir
@@ -31,31 +30,22 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - uses: r-lib/actions/setup-r@master
+      - name: Info
+        run: |
+          echo "GitHub actor: ${{ github.actor }}"
+
+      - uses: r-lib/actions/setup-r@v1
         with:
           r-version: ${{ matrix.config.r }}
+          use-public-rspm: true
 
-      - name: Query dependencies
-        run: |
-          options("repos" = "https://cran.rstudio.com/")
-          install.packages('remotes', repos = "https://cran.rstudio.com/")
-          saveRDS(remotes::dev_package_deps(dependencies = TRUE), ".github/depends.Rds", version = 2)
-          writeLines(sprintf("R-%i.%i", getRversion()$major, getRversion()$minor), ".github/R-version")
-        shell: Rscript {0}
-
-      - name: Cache R packages
-        if: runner.os != 'Windows'
-        uses: actions/cache@v1
+      - uses: r-lib/actions/setup-r-dependencies@v2
         with:
-          path: ${{ env.R_LIBS_USER }}
-          key:  ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-${{ hashFiles('.github/depends.Rds') }}
-          restore-keys: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-
-
-      - name: Install dependencies
-        shell: Rscript {0}
-        run: |
-          remotes::install_cran(c("roxygen2", "devtools", "drat"))
-          remotes::install_deps(dependencies = TRUE)
+          cache-version: 1
+          extra-packages: |
+            roxygen2
+            devtools
+            drat
 
       - name: Roxygenize
         shell: Rscript {0}

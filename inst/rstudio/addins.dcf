@@ -30,6 +30,7 @@ Binding: rs_align_code_at_pattern
 Interactive: true
 
 
+
 Name: {RS} Sort rows (ascending): a → z, 0 → 9
 Description: Sort rows in mixed (letters/numbers) ascending order.
 Binding: rs_sort_rows_ascending
@@ -206,3 +207,14 @@ Name: {RS} Create RStudio context object (for debugging)
 Description: Run addin.tools::rs_get_context() and access the result (see code in console)
 Binding: rs_get_context_addin
 Interactive: false
+
+Name: {RS} Check if in Rmd Visual Mode (for debugging)
+Description: Run addin.tools::is_rmd_visual_mode() and access the result (see code in console)
+Binding: rs_is_rmd_visual_mode
+Interactive: false
+
+
+Name: {RS} Options (package 'addins.rs')
+Description: Package 'addins.rs' options.
+Binding: rs_addins_options
+Interactive: true

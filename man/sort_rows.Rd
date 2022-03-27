@@ -18,13 +18,13 @@ rs_sort_rows_ascending(context = rs_get_context())
 rs_sort_rows_descending(context = rs_get_context())
 }
 \arguments{
-\item{decreasing}{logical.  Should the sort be increasing or
-    decreasing? Note that \code{descending=TRUE} reverses the meanings of
-    \code{na.last} and \code{blanks.last}.}
+\item{decreasing}{logical.  Should the sort be increasing or decreasing?
+Note that \code{descending=TRUE} reverses the meanings of \code{na.last} and
+\code{blanks.last}.}
 
-\item{numeric.type}{either "decimal" (default) or "roman".  Are numeric values represented as
-    decimal numbers (\code{numeric.type="decimal"}) or as Roman numerals
-    (\code{numeric.type="roman"})? }
+\item{numeric.type}{either "decimal" (default) or "roman".  Are numeric
+values represented as decimal numbers (\code{numeric.type="decimal"}) or as
+Roman numerals (\code{numeric.type="roman"})?}
 
 \item{context}{(class \code{document_context}) \cr
 Object with context of active RStudio document.}
