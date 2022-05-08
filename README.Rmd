@@ -85,3 +85,4 @@ remotes::install_github("GegznaV/addins.rs")
 ***
 
 More information at http://gegznav.github.io/addins.rs/
+
