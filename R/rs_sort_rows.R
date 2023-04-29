@@ -1,5 +1,5 @@
 #' @name sort_rows
-#' @title Sort selected lines.
+#' @title Sort selected lines
 #'
 #' @description
 #' Functions sort selected lines. And sort numbers as numbers not alphabetically.

@@ -1,7 +1,7 @@
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #' @name insert_quotes
 #'
-#' @title Insert quotes.
+#' @title Insert quotes
 #'
 #' @description These add-ins insert quotation symbols (e.g., `„`, `“`, and `”`)
 #' at the cursor position.

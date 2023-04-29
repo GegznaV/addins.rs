@@ -1,4 +1,4 @@
-#' Insert date and time.
+#' Insert date and time
 #'
 #' RStudio add-in to insert date and time at the cursor position.
 #'

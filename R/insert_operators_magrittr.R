@@ -3,8 +3,7 @@
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #' @name insert_magrittr_operators
 #'
-#' @title Insert magrittr operators.
-#'
+#' @title Insert magrittr operators
 #' @description These add-ins insert operators `%>%`, `%<>%`,
 #'  `%$%`,
 #' and `%T>%` at the cursor position.

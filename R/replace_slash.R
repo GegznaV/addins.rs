@@ -1,6 +1,6 @@
 # 'Replace selected symbols' addins ---------------------------------------
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-#' Replace slash.
+#' Replace slash
 #'
 #' RStudio add-in to manage various types of slashes.
 #' Select a piece of text with a cursor and do the necessary replacement

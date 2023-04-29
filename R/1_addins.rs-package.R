@@ -1,9 +1,7 @@
 #' @name addins.rs
 #' @docType package
 #'
-#' @title A Set of RStudio Add-ins.
-#'
-#'
+#' @title A Set of RStudio Add-ins
 #' @description
 #'
 #' Package **`addins.rs`** provides a set of RStudio add-ins that

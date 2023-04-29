@@ -3,7 +3,7 @@
 # =============================================================================
 
 
-#' Insert %*%.
+#' Insert %*%
 #'
 #' Call this function as an add-in to insert `%*%` at the cursor position.
 #'
@@ -18,7 +18,7 @@ rs_insert_matrix_multiplication <- function(context = rs_get_context()) {
     rs_insert_text(text = "%*%", context = context, spaces = TRUE)
 }
 
-#' Insert %/%.
+#' Insert %/%
 #'
 #' @description Call this function as an add-in to insert `%/% ` at the cursor position.
 #'
@@ -31,7 +31,7 @@ rs_insert_integer_division <- function(context = rs_get_context()) {
     rs_insert_text(text = "%/%", context = context, spaces = TRUE)
 }
 
-#' Insert %%.
+#' Insert %%
 #'
 #' Call this function as an add-in to insert `%%` at the cursor position.
 #'
@@ -48,7 +48,7 @@ rs_insert_modulo <- function(context = rs_get_context()) {
 }
 
 
-#' Insert %in%.
+#' Insert %in%
 #'
 #' @description Call this function as an add-in to insert `%in%` at the cursor position.
 #'

@@ -1,7 +1,7 @@
 # Insert lines ---------------------------------------------------------------
 
 #' @name insert_line
-#' @title Insert various lines.
+#' @title Insert various lines
 #' @description
 #' These functions insert sequence of symbols (the line) which by default starts
 #' at the cursor position and ends at symbol (column) 79. (It is recommended

@@ -1,4 +1,4 @@
-#' Enclose with %%.
+#' Enclose with %%
 #'
 #' Call this function as an add-in to enclose selected text with percent operator `%`.
 #'

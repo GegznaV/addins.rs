@@ -36,7 +36,7 @@
 
 
 # ============================================================================
-#' Align code at certain symbols.
+#' Align code at certain symbols
 #'
 #' In selected lines, align code at first occurrence of certain symbol in each
 #' row.

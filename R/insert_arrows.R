@@ -1,6 +1,6 @@
 # Arrows ------------------------------------------------------------------
 
-#' Insert arrow (->, ->>, <-, <<-).
+#' Insert arrow (->, ->>, <-, <<-)
 #'
 #' RStudio add-in to insert either `->`, `->>`,
 #' `<-` or `<<-` at the cursor position.
