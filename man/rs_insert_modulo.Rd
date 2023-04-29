@@ -2,7 +2,7 @@
 % Please edit documentation in R/insert_operators_other.R
 \name{rs_insert_modulo}
 \alias{rs_insert_modulo}
-\title{Insert \%\%.}
+\title{Insert \%\%}
 \usage{
 rs_insert_modulo(context = rs_get_context())
 }

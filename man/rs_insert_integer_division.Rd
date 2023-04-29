@@ -2,7 +2,7 @@
 % Please edit documentation in R/insert_operators_other.R
 \name{rs_insert_integer_division}
 \alias{rs_insert_integer_division}
-\title{Insert \%/\%.}
+\title{Insert \%/\%}
 \usage{
 rs_insert_integer_division(context = rs_get_context())
 }

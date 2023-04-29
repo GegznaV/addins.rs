@@ -4,7 +4,7 @@
 \alias{rs_insert_datetime}
 \alias{rs_insert_date}
 \alias{rs_insert_time}
-\title{Insert date and time.}
+\title{Insert date and time}
 \usage{
 rs_insert_datetime(context = rs_get_context())
 

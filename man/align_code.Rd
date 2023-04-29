@@ -11,7 +11,7 @@
 \alias{rs_align_code_at_pipe_operator}
 \alias{rs_align_code_at_hash}
 \alias{rs_align_code_at_vertical_bar}
-\title{Align code at certain symbols.}
+\title{Align code at certain symbols}
 \usage{
 rs_align_code_at_pattern(context = rs_get_context())
 

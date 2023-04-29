@@ -2,7 +2,7 @@
 % Please edit documentation in R/enclose.R
 \name{rs_enclose_with_percent}
 \alias{rs_enclose_with_percent}
-\title{Enclose with \%\%.}
+\title{Enclose with \%\%}
 \usage{
 rs_enclose_with_percent(context = rs_get_context())
 }

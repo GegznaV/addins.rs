@@ -6,7 +6,7 @@
 \alias{rs_insert_line_ss}
 \alias{rs_insert_line_ds}
 \alias{rs_insert_line_sw}
-\title{Insert various lines.}
+\title{Insert various lines}
 \usage{
 rs_insert_line(
   symbol,

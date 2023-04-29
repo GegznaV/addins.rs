@@ -5,7 +5,7 @@
 \alias{rs_insert_quotes_double_lower}
 \alias{rs_insert_quotes_double_upper_c}
 \alias{rs_insert_quotes_double_upper_d}
-\title{Insert quotes.}
+\title{Insert quotes}
 \usage{
 rs_insert_quotes_double_lower(context = rs_get_context())
 

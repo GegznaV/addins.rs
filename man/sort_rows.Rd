@@ -5,7 +5,7 @@
 \alias{rs_sort_rows}
 \alias{rs_sort_rows_ascending}
 \alias{rs_sort_rows_descending}
-\title{Sort selected lines.}
+\title{Sort selected lines}
 \usage{
 rs_sort_rows(
   decreasing = FALSE,
