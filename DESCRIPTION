@@ -1,8 +1,8 @@
 Package: addins.rs
 Type: Package
 Title: RStudio Add-ins to Insert Operators and Modify Text
-Version: 0.0.11
-Date: 2022-03-27
+Version: 0.0.12
+Date: 2022-09-13
 Authors@R: c(
   person("Vilmantas", "Gegzna", email = "GegznaV@gmail.com", role = c("aut", "cre", "cph"))
   )
@@ -23,7 +23,7 @@ License: MIT + file LICENSE
 LazyData: TRUE
 ByteCompile: TRUE
 Encoding: UTF-8
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.3
 VignetteBuilder: knitr
 Remotes:
     github::GegznaV/addin.tools
