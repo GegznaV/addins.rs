@@ -30,6 +30,11 @@ Binding: rs_align_code_at_pattern
 Interactive: true
 
 
+Name: {RS} Comment/Uncomment selected lines
+Description: Comment/Uncomment selected lines.
+Binding: rs_comment_uncomment
+Interactive: false
+
 
 Name: {RS} Sort rows (ascending): a → z, 0 → 9
 Description: Sort rows in mixed (letters/numbers) ascending order.
