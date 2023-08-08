@@ -2,12 +2,12 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 <!-- badges: start -->
 
-[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/addins.rs)](https://cran.r-project.org/package=addins.rs)
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/addins.rs)](https://cran.r-project.org/package=addins.rs)
 [![GitHub
-version](https://img.shields.io/badge/GitHub-0.0.10-brightgreen.svg)](https://github.com/GegznaV/addins.rs)
+version](https://img.shields.io/badge/GitHub-0.0.12-brightgreen.svg)](https://github.com/GegznaV/addins.rs)
 [![R build
 status](https://github.com/GegznaV/addins.rs/workflows/R-CMD-check/badge.svg)](https://github.com/GegznaV/addins.rs/actions)
-[![Updated-on](https://img.shields.io/badge/Updated%20on-2020--12--08-yellowgreen.svg)](/commits/master)
+[![Updated-on](https://img.shields.io/badge/Updated%20on-2023--04--29-yellowgreen.svg)](/commits/master)
 [![MIT
 licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 <!-- badges: end -->
