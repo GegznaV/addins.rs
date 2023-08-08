@@ -7,7 +7,7 @@ on:
     branches: [main, master, devel]
   schedule:
     # (see https://crontab.guru)
-    - cron: "17 3 * */2 TUE"
+    - cron: "25 3 * */2 TUE"
   workflow_dispatch:
 
 name: R-CMD-check
@@ -37,7 +37,7 @@ jobs:
           - {os: windows-latest,  r: 'release'}
           - {os: ubuntu-latest,   r: 'devel', http-user-agent: 'release'}
           - {os: ubuntu-latest,   r: 'release'}
-          - {os: ubuntu-latest,   r: 'oldrel-1'}
+          - {os: ubuntu-latest,   r: 'oldrel'}
 
     env:
       R_KEEP_PKG_SOURCE: yes
