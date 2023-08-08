@@ -111,9 +111,9 @@ rs_align_code <- function(at_symbol, context = rs_get_context(),
             as.data.frame()
         ) %>%
         dplyr::transmute(
-          row = start.row,
-          start = start + start.column - 1,
-          end = end + start.column - 1
+          row = .$start.row,
+          start = start + .$start.column - 1,
+          end = end + .$start.column - 1
         )
     },
     "rows in selection" <- {
