@@ -1,45 +1,72 @@
-# Workflow derived from https://github.com/r-lib/actions/tree/master/examples
+# Workflow derived from https://github.com/r-lib/actions/tree/v2/examples
 # Need help debugging build failures? Start at https://github.com/r-lib/actions#where-to-find-help
 on:
   push:
-    branches: [main, master, devel, development]
+    branches: [main, master]
   release:
     types: [published]
   workflow_dispatch:
 
-name: pkgdown
+name: Update website (pkgdown)
 
 jobs:
   pkgdown:
     runs-on: ubuntu-latest
+    # Only restrict concurrency for non-PR jobs
+    concurrency:
+      group: pkgdown-${{ github.event_name != 'pull_request' || github.run_id }}
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v3
 
       - uses: r-lib/actions/setup-pandoc@v2
 
-      - uses: r-lib/actions/setup-r@v1
+      - uses: r-lib/actions/setup-r@v2
         with:
+          r-version: "release"
           use-public-rspm: true
+          extra-repositories: "https://mokymai.github.io/download/"
 
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
-          extra-packages: pkgdown
+          extra-packages: any::pkgdown, any::devtools, local::.
           needs: website
+
+      - name: Configure Git
+        run: |
+           git config --global user.email "actions@github.com"
+           git config --global user.name  "GitHub Actions"
+
+      - name: Update Rd files
+        run: |
+          devtools::document(roclets = c('rd', 'collate', 'namespace'))
+        shell: Rscript {0}
+
+      - name: Commit documentation updates (if any)
+        run: |
+          git add --all
+          git commit -m 'Re-build documentation' || echo "No changes to commit"
+          git push origin || echo "No changes to commit (documentation)"
 
       - name: Render README
         run: Rscript -e 'rmarkdown::render("README.Rmd")'
 
-      # - name: Commit results
-      #   run: |
-      #     git config --local user.email "actions@github.com"
-      #     git config --local user.name "GitHub Actions"
-      #     git commit README.md -m 'Re-build README.Rmd before pkgdown' || echo "No changes to commit"
-      #     git push origin || echo "No changes to commit"
-
-      - name: Deploy package
+      - name: Commit README (if changed)
         run: |
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Actions"
-          Rscript -e 'pkgdown::deploy_to_branch(new_process = FALSE)'
+           git commit README.md -m 'Re-build README.Rmd before pkgdown' || echo "No changes to commit (README)"
+           git push origin || echo "No changes to commit (README)"
+
+      - name: Build site
+        run: pkgdown::build_site_github_pages(new_process = FALSE, install = FALSE)
+        shell: Rscript {0}
+
+      - name: Deploy to GitHub pages 🚀
+        if: github.event_name != 'pull_request'
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          clean: false
+          branch: gh-pages
+          folder: docs
