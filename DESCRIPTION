@@ -31,7 +31,6 @@ Depends:
     R (>= 3.2),
     addin.tools (>= 0.0.10)
 Imports:
-    checkmate,
     fs,
     dplyr,
     gtools,
