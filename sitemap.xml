@@ -1,69 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>/404.html</loc>
-  </url>
-  <url>
-    <loc>/LICENSE-text.html</loc>
-  </url>
-  <url>
-    <loc>/authors.html</loc>
-  </url>
-  <url>
-    <loc>/index.html</loc>
-  </url>
-  <url>
-    <loc>/reference/addins.rs.html</loc>
-  </url>
-  <url>
-    <loc>/reference/align_code.html</loc>
-  </url>
-  <url>
-    <loc>/reference/comment.html</loc>
-  </url>
-  <url>
-    <loc>/reference/highlight_row_duplicates.html</loc>
-  </url>
-  <url>
-    <loc>/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>/reference/insert_arrows.html</loc>
-  </url>
-  <url>
-    <loc>/reference/insert_datatime.html</loc>
-  </url>
-  <url>
-    <loc>/reference/insert_line.html</loc>
-  </url>
-  <url>
-    <loc>/reference/insert_magrittr_operators.html</loc>
-  </url>
-  <url>
-    <loc>/reference/insert_quotes.html</loc>
-  </url>
-  <url>
-    <loc>/reference/path_type.html</loc>
-  </url>
-  <url>
-    <loc>/reference/replace_slash.html</loc>
-  </url>
-  <url>
-    <loc>/reference/rs_enclose_with_percent.html</loc>
-  </url>
-  <url>
-    <loc>/reference/rs_insert_infix_in.html</loc>
-  </url>
-  <url>
-    <loc>/reference/rs_insert_integer_division.html</loc>
-  </url>
-  <url>
-    <loc>/reference/rs_insert_matrix_multiplication.html</loc>
-  </url>
-  <url>
-    <loc>/reference/rs_insert_modulo.html</loc>
-  </url>
-  <url>
-    <loc>/reference/sort_rows.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>/404.html</loc></url>
+<url><loc>/LICENSE-text.html</loc></url>
+<url><loc>/authors.html</loc></url>
+<url><loc>/index.html</loc></url>
+<url><loc>/reference/addins.rs.html</loc></url>
+<url><loc>/reference/align_code.html</loc></url>
+<url><loc>/reference/comment.html</loc></url>
+<url><loc>/reference/highlight_row_duplicates.html</loc></url>
+<url><loc>/reference/index.html</loc></url>
+<url><loc>/reference/insert_arrows.html</loc></url>
+<url><loc>/reference/insert_datatime.html</loc></url>
+<url><loc>/reference/insert_line.html</loc></url>
+<url><loc>/reference/insert_magrittr_operators.html</loc></url>
+<url><loc>/reference/insert_quotes.html</loc></url>
+<url><loc>/reference/path_type.html</loc></url>
+<url><loc>/reference/replace_slash.html</loc></url>
+<url><loc>/reference/rs_enclose_with_percent.html</loc></url>
+<url><loc>/reference/rs_insert_infix_in.html</loc></url>
+<url><loc>/reference/rs_insert_integer_division.html</loc></url>
+<url><loc>/reference/rs_insert_matrix_multiplication.html</loc></url>
+<url><loc>/reference/rs_insert_modulo.html</loc></url>
+<url><loc>/reference/sort_rows.html</loc></url>
 </urlset>
+
