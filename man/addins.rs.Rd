@@ -2,6 +2,7 @@
 % Please edit documentation in R/1_addins.rs-package.R
 \docType{package}
 \name{addins.rs}
+\alias{-package}
 \alias{addins.rs}
 \title{A Set of RStudio Add-ins}
 \description{
