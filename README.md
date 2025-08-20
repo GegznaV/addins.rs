@@ -7,7 +7,7 @@
 version](https://img.shields.io/badge/GitHub-0.0.12-brightgreen.svg)](https://github.com/GegznaV/addins.rs)
 [![R build
 status](https://github.com/GegznaV/addins.rs/workflows/R-CMD-check/badge.svg)](https://github.com/GegznaV/addins.rs/actions)
-[![Updated-on](https://img.shields.io/badge/Updated%20on-2023--08--08-yellowgreen.svg)](/commits/master)
+[![Updated-on](https://img.shields.io/badge/Updated%20on-2025--08--20-yellowgreen.svg)](/commits/master)
 [![MIT
 licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 <!-- badges: end -->
