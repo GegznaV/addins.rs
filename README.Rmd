@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 <!-- [![CRAN_Status](http://www.r-pkg.org/badges/version/addins.rs)](https://cran.r-project.org/package=addins.rs) -->
 [![GitHub version](https://img.shields.io/badge/GitHub-`r packageVersion("addins.rs")`-brightgreen.svg)](https://github.com/GegznaV/addins.rs)
 [![R build status](https://github.com/GegznaV/addins.rs/workflows/R-CMD-check/badge.svg)](https://github.com/GegznaV/addins.rs/actions)
+[![Codecov test coverage](https://codecov.io/gh/GegznaV/addins.rs/graph/badge.svg)](https://app.codecov.io/gh/GegznaV/addins.rs)
 [![Updated-on](https://img.shields.io/badge/Updated%20on-`r gsub('-', '--', Sys.Date())`-yellowgreen.svg)](/commits/master)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 <!-- badges: end -->
