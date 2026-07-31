@@ -1,10 +1,15 @@
+# Set default `styler` style
+if (requireNamespace("styler", quietly = TRUE)) {
+  style_transformer <- "styler::tidyverse_style(strict = FALSE)"
+  options(styler.addins_style_transformer = style_transformer)
+}
+
+options(styler.cache_root = "styler")
+
 # .First <- function(){
-#     Sys.setlocale("LC_ALL", "Lithuanian")
-#     cat("\nWelcome at", date(), "\n")
+#    ...
 # }
 #
 # .Last <- function(){
-#     cat("\nGoodbye at ", date(), "\n")
+#    ...
 # }
-
-options(repos = structure(c(CRAN = "https://cran.rstudio.com/")))
