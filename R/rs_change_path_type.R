@@ -17,8 +17,7 @@ rs_to_relative_path <- function() {
 }
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 rs_replace_path_type <- function(to = c("relative", "absolute"), start_dir = getwd(),
-  keep_selected = TRUE, selection = c("all", "first", "last"), context = rs_get_context())
-{
+  keep_selected = TRUE, selection = c("all", "first", "last"), context = rs_get_context()) {
   if (context$contents == "") {
     return()
   }

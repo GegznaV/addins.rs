@@ -14,8 +14,8 @@
 #'
 #' @family 'Insert at cursor position' add-ins
 rs_insert_matrix_multiplication <- function(context = rs_get_context()) {
-    # rstudioapi::insertText(text = " %*% ")
-    rs_insert_text(text = "%*%", context = context, spaces = TRUE)
+  # rstudioapi::insertText(text = " %*% ")
+  rs_insert_text(text = "%*%", context = context, spaces = TRUE)
 }
 
 #' Insert %/%
@@ -28,7 +28,7 @@ rs_insert_matrix_multiplication <- function(context = rs_get_context()) {
 #'
 #' @family 'Insert at cursor position' add-ins
 rs_insert_integer_division <- function(context = rs_get_context()) {
-    rs_insert_text(text = "%/%", context = context, spaces = TRUE)
+  rs_insert_text(text = "%/%", context = context, spaces = TRUE)
 }
 
 #' Insert %%
@@ -44,7 +44,7 @@ rs_insert_integer_division <- function(context = rs_get_context()) {
 #' @family 'Insert at cursor position' add-ins
 #'
 rs_insert_modulo <- function(context = rs_get_context()) {
-    rs_insert_text(text = "%%", context = context, spaces = TRUE)
+  rs_insert_text(text = "%%", context = context, spaces = TRUE)
 }
 
 
@@ -58,6 +58,5 @@ rs_insert_modulo <- function(context = rs_get_context()) {
 #'
 #' @family 'Insert at cursor position' add-ins
 rs_insert_infix_in <- function(context = rs_get_context()) {
-    rs_insert_text(text = "%in%", context = context, spaces = TRUE)
+  rs_insert_text(text = "%in%", context = context, spaces = TRUE)
 }
-

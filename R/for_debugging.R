@@ -10,7 +10,7 @@ rs_get_context_addin <- function(variables) {
       "context <- addins.rs:::get_saved_context()"
     ),
     execute = FALSE
-    )
+  )
 }
 
 get_saved_context <- function() {
