@@ -178,6 +178,12 @@ rs_align_code_at_pipe_operator <- function(context = rs_get_context()) {
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #' @rdname align_code
 #' @export
+rs_align_code_at_native_pipe <- function(context = rs_get_context()) {
+  rs_align_code(stringr::fixed("|>"), context = context)
+}
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#' @rdname align_code
+#' @export
 rs_align_code_at_hash <- function(context = rs_get_context()) {
   rs_align_code(stringr::fixed("#"), context = context)
 }
