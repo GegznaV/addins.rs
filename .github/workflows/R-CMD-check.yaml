@@ -28,7 +28,6 @@ jobs:
 
     name: ${{ matrix.config.os }} (R-${{ matrix.config.r }})
 
-
     strategy:
       fail-fast: false
       matrix:
@@ -37,14 +36,14 @@ jobs:
           - {os: windows-latest,  r: 'release'}
           - {os: ubuntu-latest,   r: 'devel', http-user-agent: 'release'}
           - {os: ubuntu-latest,   r: 'release'}
-          - {os: ubuntu-latest,   r: 'oldrel'}
+          - {os: ubuntu-latest,   r: 'oldrel-1'}
 
     env:
       R_KEEP_PKG_SOURCE: yes
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - uses: r-lib/actions/setup-pandoc@v2
 
