@@ -32,17 +32,17 @@ equivalent is loaded.
 }
 \seealso{
 \itemize{
-\item Forward pipeline operator \link[magrittr:pipe]{\%>\%}
-\item Compound assignment pipe operator \link[magrittr:compound]{\%<>\%}
-\item Exposition pipe operator \link[magrittr:exposition]{\%$\%} and operator \link[base:Extract]{$}
-\item Tee operator \link[magrittr:tee]{\%T>\%}
+\item Forward pipeline operator \link[magrittr:\%>\%]{\%>\%}
+\item Compound assignment pipe operator \link[magrittr:\%<>\%]{\%<>\%}
+\item Exposition pipe operator \link[magrittr:\%$\%]{\%$\%} and operator \link[base:$]{$}
+\item Tee operator \link[magrittr:\%T>\%]{\%T>\%}
 }
 
-Other 'Insert at cursor position' add-ins: 
-\code{\link{rs_enclose_with_percent}()},
-\code{\link{rs_insert_infix_in}()},
-\code{\link{rs_insert_integer_division}()},
-\code{\link{rs_insert_matrix_multiplication}()},
-\code{\link{rs_insert_modulo}()}
+Other 'Insert at cursor position' add-ins:
+\code{\link[=rs_enclose_with_percent]{rs_enclose_with_percent()}},
+\code{\link[=rs_insert_infix_in]{rs_insert_infix_in()}},
+\code{\link[=rs_insert_integer_division]{rs_insert_integer_division()}},
+\code{\link[=rs_insert_matrix_multiplication]{rs_insert_matrix_multiplication()}},
+\code{\link[=rs_insert_modulo]{rs_insert_modulo()}}
 }
 \concept{'Insert at cursor position' add-ins}
