@@ -16,19 +16,18 @@ NULL
 #' @rdname insert_quotes
 #' @export
 rs_insert_quotes_double_lower <- function(context = rs_get_context()) {
-    rs_insert_text(text = "\u201e", context = context, spaces = FALSE)
+  rs_insert_text(text = "\u201e", context = context, spaces = FALSE)
 }
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #' @rdname insert_quotes
 #' @export
 rs_insert_quotes_double_upper_c <- function(context = rs_get_context()) {
-    rs_insert_text(text = "\u201c", context = context, spaces = FALSE)
+  rs_insert_text(text = "\u201c", context = context, spaces = FALSE)
 }
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #' @rdname insert_quotes
 #' @export
 rs_insert_quotes_double_upper_d <- function(context = rs_get_context()) {
-    rs_insert_text(text = "\u201d", context = context, spaces = FALSE)
+  rs_insert_text(text = "\u201d", context = context, spaces = FALSE)
 }
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-

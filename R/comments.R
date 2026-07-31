@@ -13,6 +13,6 @@ NULL
 #' @name comment
 #' @export
 rs_comment_uncomment <- function() {
-    rstudioapi::executeCommand("commentUncomment", quiet = TRUE)
+  rstudioapi::executeCommand("commentUncomment", quiet = TRUE)
 }
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

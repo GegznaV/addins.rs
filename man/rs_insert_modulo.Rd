@@ -17,11 +17,11 @@ Call this function as an add-in to insert \code{\%\%} at the cursor position.
 Operator does not work unless package which contains this operator is loaded.
 }
 \seealso{
-Other 'Insert at cursor position' add-ins: 
+Other 'Insert at cursor position' add-ins:
 \code{\link{insert_magrittr_operators}},
-\code{\link{rs_enclose_with_percent}()},
-\code{\link{rs_insert_infix_in}()},
-\code{\link{rs_insert_integer_division}()},
-\code{\link{rs_insert_matrix_multiplication}()}
+\code{\link[=rs_enclose_with_percent]{rs_enclose_with_percent()}},
+\code{\link[=rs_insert_infix_in]{rs_insert_infix_in()}},
+\code{\link[=rs_insert_integer_division]{rs_insert_integer_division()}},
+\code{\link[=rs_insert_matrix_multiplication]{rs_insert_matrix_multiplication()}}
 }
 \concept{'Insert at cursor position' add-ins}

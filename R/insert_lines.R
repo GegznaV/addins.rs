@@ -27,24 +27,24 @@ NULL
 #' @export
 rs_insert_line <- function(symbol, start = rs_get_index_first_selected_col(),
                            end = getOption("addins.rs.line_end", 79)) {
-    rs_insert_symbol_seq(symbol, start[1], end)
+  rs_insert_symbol_seq(symbol, start[1], end)
 }
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #' @name insert_line
 #' @export
 rs_insert_line_ss <- function() {
-    rs_insert_line("-")
+  rs_insert_line("-")
 }
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #' @name insert_line
 #' @export
 rs_insert_line_ds <- function() {
-    rs_insert_line("=")
+  rs_insert_line("=")
 }
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #' @name insert_line
 #' @export
 rs_insert_line_sw <- function() {
-    rs_insert_line("~")
+  rs_insert_line("~")
 }
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

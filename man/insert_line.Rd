@@ -41,7 +41,7 @@ Use
 \code{rs_insert_line_sw()} to insert \verb{~~~~~~} at the cursor position.
 }
 \seealso{
-Other 'Insert at cursor position' addins: 
+Other 'Insert at cursor position' addins:
 \code{\link{insert_arrows}}
 }
 \concept{'Insert at cursor position' addins}

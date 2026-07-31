@@ -1,0 +1,14 @@
+linters: lintr::linters_with_defaults(
+  line_length_linter = lintr::line_length_linter(140),
+  object_length_linter = NULL,
+  commented_code_linter = NULL,
+  indentation_linter = NULL,
+  trailing_blank_lines_linter = NULL
+ )
+encoding: "UTF-8"
+exclusions: list(
+  "^docs/",
+  "^pkgdown/",
+  "^man/",
+  "^data-raw/"
+ )

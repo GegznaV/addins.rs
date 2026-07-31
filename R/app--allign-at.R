@@ -27,22 +27,26 @@ rs_align_code_at_pattern <- function(context = rs_get_context()) {
         tags$textarea(id = "pattern", rows =  1, cols = 30, "",
           autofocus = "autofocus")),
 
-        # textInput("pattern2", "Pattern:")),
+      # textInput("pattern2", "Pattern:")),
       stableColumnLayout(checkboxInput("regex", "Regex", value = FALSE))
     )
   )
 
   on_done <- function(input) {
-      pattern <- input$pattern
-      if (pattern == "") {
-        stopApp()
-        return()
-      }
-
-      patt_type <- if (input$regex) {stringr::regex} else {stringr::fixed}
-      rs_align_code(at_symbol = patt_type(pattern), context = context)
+    pattern <- input$pattern
+    if (pattern == "") {
       stopApp()
+      return()
     }
+
+    patt_type <- if (input$regex) {
+      stringr::regex
+    } else {
+      stringr::fixed
+    }
+    rs_align_code(at_symbol = patt_type(pattern), context = context)
+    stopApp()
+  }
 
   server <- function(input, output, session) {
 

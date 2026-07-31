@@ -16,29 +16,28 @@
 #' @export
 #'
 rs_highlight_first_row_duplicates <- function(context = rs_get_context()) {
-    text        <- rs_get_selected_rows(context)
-    row_numbers <- attr(text, "row_numbers")
-    duplicates <- row_numbers[text == text[1]][-1]
-    rs_select_rows(duplicates, context = context)
+  text        <- rs_get_selected_rows(context)
+  row_numbers <- attr(text, "row_numbers")
+  duplicates <- row_numbers[text == text[1]][-1]
+  rs_select_rows(duplicates, context = context)
 }
 
 #' @rdname highlight_row_duplicates
 #' @export
 rs_highlight_row_duplicates_all <- function(context = rs_get_context()) {
-    text        <- rs_get_selected_rows(context)
-    row_numbers <- attr(text, "row_numbers")
+  text        <- rs_get_selected_rows(context)
+  row_numbers <- attr(text, "row_numbers")
 
-    duplicates <- row_numbers[text %in% unique(text[duplicated(text)])]
-    rs_select_rows(duplicates, context = context)
+  duplicates <- row_numbers[text %in% unique(text[duplicated(text)])]
+  rs_select_rows(duplicates, context = context)
 }
 
 #' @rdname highlight_row_duplicates
 #' @export
 rs_highlight_row_duplicates <- function(context = rs_get_context()) {
-    text        <- rs_get_selected_rows(context)
-    row_numbers <- attr(text, "row_numbers")
+  text        <- rs_get_selected_rows(context)
+  row_numbers <- attr(text, "row_numbers")
 
-    duplicates <- row_numbers[duplicated(text)]
-    rs_select_rows(duplicates, context = context)
+  duplicates <- row_numbers[duplicated(text)]
+  rs_select_rows(duplicates, context = context)
 }
-

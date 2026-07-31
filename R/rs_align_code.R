@@ -71,8 +71,8 @@ one_line_per_row <- function(x) {
     return(x)
   }
 
-  r = x$start.row:x$end.row
-  n_row = length(r)
+  r <- x$start.row:x$end.row
+  n_row <- length(r)
 
   data.frame(
     start.row = r,
@@ -178,6 +178,12 @@ rs_align_code_at_pipe_operator <- function(context = rs_get_context()) {
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #' @rdname align_code
 #' @export
+rs_align_code_at_native_pipe <- function(context = rs_get_context()) {
+  rs_align_code(stringr::fixed("|>"), context = context)
+}
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#' @rdname align_code
+#' @export
 rs_align_code_at_hash <- function(context = rs_get_context()) {
   rs_align_code(stringr::fixed("#"), context = context)
 }
@@ -188,4 +194,3 @@ rs_align_code_at_vertical_bar <- function(context = rs_get_context()) {
   rs_align_code(stringr::fixed("|"), context = context)
 }
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-

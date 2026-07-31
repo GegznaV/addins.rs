@@ -1,33 +1,60 @@
-favicon: "favicon.png"
+url: https://gegznav.github.io/addins.rs/
 template:
-  params:
-    bootswatch: united
-navbar:
-  title: "addins.rs | R package"
-  type: default
-  left:
-  - icon: fa-home fa-lg
-    href: index.html
-  - text: Functions
-    href: reference/index.html
-  - text: Tutorials and Examples
-    menu:
-    - text: Recommended Workflow and Examples
-      href: articles/v1_workflow.html
-  right:
-  - icon: fa-github fa-lg
-    href: https://github.com/GegznaV/addins.rs
-reference:
-- title: '"Replace" family functions'
-  contents:
-  - starts_with("rs_replace")
-- title: 'Add-ins to format text in R Markdown documents'
-  contents:
-  - starts_with("rs_enclose")
-  - starts_with("rmd_")
-- title: 'Insert operators'
-  contents:
-  - starts_with("rs_insert")
-- title: 'Other'
-  contents:
-  - '`addins.rs`'
+  bootstrap: 5
+  light-switch: true
+  bootswatch: sandstone
+  bootswatch_dark: darkly
+  bslib:
+    primary: "#1b4332"     # Deep Dark Green
+    secondary: "#2d6a4f"   # Medium Sage
+    success: "#52b788"     # Soft Emerald
+    dark: "#2b2d42"        # Slate Dark
+    light: "#f4f6f0"       # Off-white / Cream
+
+
+# Search settings
+search:
+  backend: docsearch
+
+# -------------------------------------------------------------------------
+# Automatically switches, which verion should be built:
+# released or in-development
+
+development:
+  mode: auto
+
+# development:
+#   mode: unreleased
+#   destination: devel
+#   version_label: default
+#   version_tooltip: "Github version"
+
+# navbar:
+#   title: "addins.rs | R package"
+#   type: default
+#   left:
+#   - icon: fa-home fa-lg
+#     href: index.html
+#   - text: Functions
+#     href: reference/index.html
+#   - text: Tutorials and Examples
+#     menu:
+#     - text: Recommended Workflow and Examples
+#       href: articles/v1_workflow.html
+#   right:
+#   - icon: fa-github fa-lg
+#     href: https://github.com/GegznaV/addins.rs
+# reference:
+# - title: '"Replace" family functions'
+#   contents:
+#   - starts_with("rs_replace")
+# - title: 'Add-ins to format text in R Markdown documents'
+#   contents:
+#   - starts_with("rs_enclose")
+#   - starts_with("rmd_")
+# - title: 'Insert operators'
+#   contents:
+#   - starts_with("rs_insert")
+# - title: 'Other'
+#   contents:
+#   - '`addins.rs`'

@@ -26,7 +26,10 @@ rs_addins_options <- function(context = rs_get_context()) {
     stopApp()
   }
 
-  on_cancel <- function(input) {stopApp(); return()}
+  on_cancel <- function(input) {
+    stopApp()
+    return()
+  }
 
   server <- function(input, output, session) {
     observeEvent(input$done,   on_done(input))

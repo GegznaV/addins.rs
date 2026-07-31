@@ -14,13 +14,13 @@ Object with context of active RStudio document.}
 Call this function as an add-in to insert \verb{\%/\% } at the cursor position.
 }
 \seealso{
-Operator \link[base:Arithmetic]{\%/\%}.
+Operator \link[base:\%/\%]{\%/\%}.
 
-Other 'Insert at cursor position' add-ins: 
+Other 'Insert at cursor position' add-ins:
 \code{\link{insert_magrittr_operators}},
-\code{\link{rs_enclose_with_percent}()},
-\code{\link{rs_insert_infix_in}()},
-\code{\link{rs_insert_matrix_multiplication}()},
-\code{\link{rs_insert_modulo}()}
+\code{\link[=rs_enclose_with_percent]{rs_enclose_with_percent()}},
+\code{\link[=rs_insert_infix_in]{rs_insert_infix_in()}},
+\code{\link[=rs_insert_matrix_multiplication]{rs_insert_matrix_multiplication()}},
+\code{\link[=rs_insert_modulo]{rs_insert_modulo()}}
 }
 \concept{'Insert at cursor position' add-ins}

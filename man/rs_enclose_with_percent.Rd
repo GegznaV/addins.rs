@@ -14,11 +14,11 @@ Object with context of active RStudio document.}
 Call this function as an add-in to enclose selected text with percent operator \verb{\%}.
 }
 \seealso{
-Other 'Insert at cursor position' add-ins: 
+Other 'Insert at cursor position' add-ins:
 \code{\link{insert_magrittr_operators}},
-\code{\link{rs_insert_infix_in}()},
-\code{\link{rs_insert_integer_division}()},
-\code{\link{rs_insert_matrix_multiplication}()},
-\code{\link{rs_insert_modulo}()}
+\code{\link[=rs_insert_infix_in]{rs_insert_infix_in()}},
+\code{\link[=rs_insert_integer_division]{rs_insert_integer_division()}},
+\code{\link[=rs_insert_matrix_multiplication]{rs_insert_matrix_multiplication()}},
+\code{\link[=rs_insert_modulo]{rs_insert_modulo()}}
 }
 \concept{'Insert at cursor position' add-ins}

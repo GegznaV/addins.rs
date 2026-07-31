@@ -9,6 +9,7 @@
 \alias{rs_align_code_at_equal}
 \alias{rs_align_code_at_arrow}
 \alias{rs_align_code_at_pipe_operator}
+\alias{rs_align_code_at_native_pipe}
 \alias{rs_align_code_at_hash}
 \alias{rs_align_code_at_vertical_bar}
 \title{Align code at certain symbols}
@@ -28,6 +29,8 @@ rs_align_code_at_equal(context = rs_get_context())
 rs_align_code_at_arrow(context = rs_get_context())
 
 rs_align_code_at_pipe_operator(context = rs_get_context())
+
+rs_align_code_at_native_pipe(context = rs_get_context())
 
 rs_align_code_at_hash(context = rs_get_context())
 
