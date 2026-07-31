@@ -214,8 +214,8 @@ Binding: rs_get_context_addin
 Interactive: false
 
 Name: {RS} Check if in Rmd Visual Mode (for debugging)
-Description: Run addin.tools::is_rmd_visual_mode() and access the result (see code in console)
-Binding: rs_is_rmd_visual_mode
+Description: Run addin.tools::is_visual_editor() and access the result (see code in console)
+Binding: rs_is_visual_editor
 Interactive: false
 
 
