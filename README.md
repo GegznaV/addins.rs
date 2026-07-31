@@ -9,6 +9,8 @@
 version](https://img.shields.io/badge/GitHub-0.0.12-brightgreen.svg)](https://github.com/GegznaV/addins.rs)
 [![R build
 status](https://github.com/GegznaV/addins.rs/workflows/R-CMD-check/badge.svg)](https://github.com/GegznaV/addins.rs/actions)
+[![Codecov test
+coverage](https://codecov.io/gh/GegznaV/addins.rs/graph/badge.svg)](https://app.codecov.io/gh/GegznaV/addins.rs)
 [![Updated-on](https://img.shields.io/badge/Updated%20on-2026--07--31-yellowgreen.svg)](/commits/master)
 [![MIT
 licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
