@@ -17,9 +17,9 @@ get_saved_context <- function() {
   addins_env$context
 }
 
-rs_is_rmd_visual_mode <- function(variables) {
-  in_visual_mode <- addin.tools::is_rmd_visual_mode()
-  addins_env$is_rmd_visual_mode <- in_visual_mode
+rs_is_visual_editor <- function(variables) {
+  in_visual_mode <- addin.tools::is_visual_editor()
+  addins_env$is_visual_editor <- in_visual_mode
 
   rstudioapi::sendToConsole(
     paste0(
@@ -31,5 +31,5 @@ rs_is_rmd_visual_mode <- function(variables) {
 }
 
 get_saved_rmd_mode <- function() {
-  addins_env$is_rmd_visual_mode
+  addins_env$is_visual_editor
 }
