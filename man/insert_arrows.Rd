@@ -28,23 +28,22 @@ RStudio add-in to insert either \verb{->}, \verb{->>},
 use hotkeys combination \kbd{ALT} + \kbd{-} to insert \verb{<-} in RStudio.
 }
 \examples{
-\dontrun{
-\donttest{
-library(addins.rs)
+if (FALSE) {
+ library(addins.rs)
 
-rs_insert_arrow_rl()
-## <-
+ rs_insert_arrow_rl()
+ ## <-
 
-rs_insert_arrow_rl2()
-## <<-
+ rs_insert_arrow_rl2()
+ ## <<-
 
-rs_insert_arrow_lr()
-## ->
+ rs_insert_arrow_lr()
+ ## ->
 
-rs_insert_arrow_lr2()
-## ->>
+ rs_insert_arrow_lr2()
+ ## ->>
 }
-}
+
 }
 \seealso{
 Assignment operators \link[base:assignOps]{assignOps}.\cr
