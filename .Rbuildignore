@@ -13,3 +13,4 @@
 ^_tmp/.*
 ^TODO.rmd$
 ^\.github$
+^codecov\.yml$
