@@ -35,3 +35,4 @@ vignettes/*.pdf
 _tmp/
 _tmp/tmp-functions.R
 docs/
+/_tmp
